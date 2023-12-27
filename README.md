@@ -15,6 +15,6 @@ Fun Facts
 
 💬 Ask Me About: Ask me about the benefits of strength training and how to get started
 
-📫 How to Reach Me: [Contact]
+📫 How to Reach Me: mohdasif.com/contact
 
 😄 Pronouns: He/Him
