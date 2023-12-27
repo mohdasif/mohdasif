@@ -1,36 +1,68 @@
-### Hi there 👋
-Welcome to My Personal Website!
+About
 
-I'm Asif, and this is my personal website. Explore the various sections to get to know more about me and my interests.
+I’m passionate about reading books, indulging in poetry, and maintaining a healthy lifestyle through regular workouts. This is the place where I share my thoughts, experiences, and projects related to these passions.
 
-About Me
+ 
 
-I'm passionate about reading books, indulging in poetry, and maintaining a healthy lifestyle through regular workouts. This is the place where I share my thoughts, experiences, and projects related to these passions.
+Links
 
-Personal Photos
+YouTube
+Clubhouse
+LinkedIn
+Pinterest
+Reddit
+GitHub
+X
+ 
 
-Explore a collection of my personal photos, capturing moments from my fitness journey and gym workouts. From workout routines to fitness achievements, this section provides a visual diary of my dedication to a healthy lifestyle.
+🛍️ Shop
 
-Feel the energy, see the progress, and get inspired to join me on the path to fitness excellence!
+🎧 Podcast
 
+🏋️ Workout
 
-Contact Me
+ 
 
-Have a question or just want to say hello? Feel free to reach out to me
+Bookshelves
+Reading
+Want to Read
+Read
+ 
 
-- LinkedIn: [Mohd Asif on LinkedIn](https://www.linkedin.com/in/mohdasif/)
-- Twitter: [@mohdasif](https://twitter.com/mohdasif)
-- GitHub: [mohdasif on GitHub](https://github.com/mohdasif)
-- Personal Website: [mohdasif.com](https://mohdasif.com)
+Workout Stats
+Deadlift
 
-- 🔭 I’m currently working on ... getting abs
-- 🌱 I’m currently learning ... communication skills
-- 👯 I’m looking to collaborate on ... anything with business
-- 🤔 I’m looking for help with ... relationship advice
-- 💬 Ask me about ... workout and fitness
-- 📫 How to reach me: ... contact page
-- 😄 Pronouns: ... He/Him
-- ⚡ Fun fact: ... I once attempted to read a book while working out on a treadmill. Let's just say it was an ambitious experiment, and the book didn't survive the adventure!
+Sumo: 150 Kg
 
-- Thanks for visiting! 😊
--->
+Conventional: 160 Kg
+
+Squat: 120 Kg
+
+Bench Press: 110 Kg
+
+Chest: 42 Inches
+
+Biceps: 17 Inches
+
+Thigh: 24 Inches
+
+Height: 5'9
+
+Weight: 75 kg
+
+ 
+
+Fun Facts
+🔭 Currently Working On: Getting Abs
+
+🌱 Currently Learning: The art of web development with HTML, CSS & JavaScript
+
+👯 Looking to Collaborate On: Innovative business ventures and projects.
+
+🤔 Looking for Help With: Navigating the complexities of relationships and seeking valuable advice.
+
+💬 Ask Me About: My favorite workout routines and fitness tips.
+
+📫 How to Reach Me: [Contact Page]
+
+😄 Pronouns: He/Him
