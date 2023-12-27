@@ -1,7 +1,6 @@
 About
 
-I’m passionate about reading books, indulging in poetry, and maintaining a healthy lifestyle through regular workouts. This is the place where I share my thoughts, experiences, and projects related to these passions.
-
+I’m passionate about reading books, indulging in poetry, and maintaining a healthy lifestyle through regular workouts.
 
 Fun Facts
 🔭 Currently Working On: Getting Abs
@@ -14,6 +13,6 @@ Fun Facts
 
 💬 Ask Me About: My favorite workout routines and fitness tips.
 
-📫 How to Reach Me: [Contact Page]
+📫 How to Reach Me: mohdasif.com
 
 😄 Pronouns: He/Him
