@@ -381,6 +381,19 @@
         background-color: #04AA6D; /* Background for active item */
         color: white; /* White text for active link */
     }
+    #sidebar .sidebar-section a.highlight {
+    background-color: red;
+    color: white;
+    padding: 5px 15px; /* Optional: Adds spacing */
+    display: block;   /* Optional: Makes the links block-level for better appearance */
+    text-decoration: none;
+    border-radius: 4px; /* Optional: Rounds the corners */
+    margin-bottom: 5px; /* Optional: Adds space between links */
+}
+    #sidebar .sidebar-section a.active {
+    margin-top: 40px; /* Adjust the value as needed for the desired gap */
+    display: block;   /* Ensures the margin works effectively */
+}
 </style>
 
 </head>
@@ -390,7 +403,7 @@
 <!-- Sidebar -->
 <div id="sidebar">
     <div class="sidebar-section">
-        <h4>Poetry</h4>
+        <h4>Poet</h4>
         <a href="https://mohdasif.in">Home</a>
         <a href="https://mohdasif.in/mirza-ghalib" class="active">Mirza Ghalib</a>
         <a href="https://mohdasif.in/mir-taqi-mir">Mir Taqi Mir</a>
@@ -399,6 +412,7 @@
         <a href="https://mohdasif.in/daagh-dehlvi">Daagh Dehlvi</a>
     </div>
 </div>
+
 
     <!-- Desktop Navigation -->
     <div id="desktop-navigation">
