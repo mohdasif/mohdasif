@@ -9,7 +9,7 @@
     <link rel="icon" href="https://imgur.com/yMpZ3pQ.png">
     <style>
         body {
-            background-color: #fff;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
             font-family: 'Teimpos', 'Roboto', 'Sentinel', 'Helvetica', sans-serif;
@@ -123,19 +123,17 @@
         display: none;
     }
 
-.category-link {
-    background-color: #fafafa;
-    color: #000;
-    padding: 3px 7px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-right: 23px; /* Add margin between buttons for mobile */
-    transform: translateX(7px); /* Move the custom button slightly to the right */
-    font-weight: normal; /* Set font weight to normal */
-    margin-top: 5px; /* Add margin between navigation and buttons */
-    font-size: 15px; /* Adjust the font size as needed */
-}
+        .category-link {
+        display: inline-block; /* Display categories in a row */
+        margin-right: 5px; /* Adjusted margin for space between category links */
+        color: #000;
+        text-decoration: none;
+        padding: 3px 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #f5f5f5;
+        font-weight: normal; /* Set font weight to normal */
+    }
 
     .category-link:hover {
         background-color: #e0e0e0;
@@ -348,7 +346,7 @@ nav ul li a {
 /* Active link styles */
 .categories a.active {
   color: #fff; /* Text color for active link */
-  background-color: #74c0f5; /* Background color for active link */
+  background-color: #f44336; /* Background color for active link */
   border-radius: 10px; /* Rounded corners */
   padding: 2px 5px; /* Increase the size of the background color */
   margin-right: 10px; /* Move the active button slightly to the right */
@@ -403,8 +401,8 @@ nav ul li a {
         <div class="categories">
         <a href="/videos" class="category-link">Videos</a>
         <a href="/mushaira" class="active">Mushaira</a>
-        <a href="/mirza-ghalib" class="category-link">Ghalib</a>
-        <a href="/mir-taqi-mir" class="category-link">Mir</a>
+        <a href="https://mohdasif.com/fitness" class="category-link">Fitness</a>
+        <a href="https://mohdasif.com/exercises" class="category-link">Exercises</a> 
     </div>
         </div>
 
