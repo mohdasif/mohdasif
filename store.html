@@ -416,9 +416,9 @@ margin-top: 10px; /* Add margin for spacing */
 
         nav {
             float: left;
-            width: 33%;
+            width: 37%;
             background-color: #f1f1f1;
-            padding: 32px;
+            padding: 25px;
             height: 100vh;
             position: fixed;
             top: 0; /* Position at the top */
@@ -435,19 +435,67 @@ margin-top: 10px; /* Add margin for spacing */
             padding: 0;
         }
         nav ul li {
-    margin-bottom: 10px;
-    font-size: 1.2em; /* Adjust the size as needed */
-}
+            margin-bottom: 5px;
+        }
 nav ul li:first-child {
-    margin-top: 15px; /* Adjust the margin as needed */
+    margin-top: 10px; /* Adjust the margin as needed */
 }
 
 nav ul h4 {
-    margin-top: 15px; /* Add space above all h4 elements */
+    margin-top: 10px; /* Add space above all h4 elements */
+    font-size: 18px; /* Increase the font size of h4 elements */
 }
 
 nav ul h4:first-of-type {
-    margin-top: 40px; /* Add additional space above the first h4 */
+    margin-top: 50px; /* Add additional space above the first h4 */
+    margin-bottom: 15px; /* Add additional space above the first h4 */
+}
+
+        @media only screen and (max-width: 600px) {
+            /* Show mobile navigation and hide desktop navigation on small screens */
+            #desktop-navigation {
+                display: none;
+            }
+
+            #mobile-navigation {
+                display: block;
+            }
+
+            .content-container {
+                margin-left: 0; /* Reset margin for small screens */
+            }
+
+            #sidebar {
+                display: none; /* Hide sidebar on small screens */
+            }
+        }
+
+nav, nav ul, nav li, nav a, nav h4 {
+    font-weight: normal !important; /* Ensure all elements inside nav have normal font weight */
+}
+/* Adjust the gap between menu items */
+nav ul {
+    padding: 0; /* Remove padding from the unordered list */
+    margin: 0; /* Remove margin from the unordered list */
+}
+
+nav li {
+    margin: 10px; /* Remove margin from list items */
+    padding: 0; /* Remove padding from list items */
+    list-style: none; /* Remove default list styling */
+}
+/* Reduce margin and padding for list items */
+nav ul li {
+    margin-bottom: 1px; /* Adjust the value as needed */
+    padding: 0; /* Remove any padding */
+}
+/* Reduce margin and padding for the heading */
+nav ul li h4 {
+    margin-top: 5px;
+}
+/* Increase the font size for list items under "Pages" */
+nav ul li a {
+    font-size: 18px; /* Increase the font size as needed */
 }
 
         @media only screen and (max-width: 600px) {

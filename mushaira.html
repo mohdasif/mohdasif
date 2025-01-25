@@ -126,7 +126,7 @@
 
         .category-link {
         display: inline-block; /* Display categories in a row */
-        margin-right: 12px; /* Adjusted margin for space between category links */
+        margin-right: 14px; /* Adjusted margin for space between category links */
         color: #000;
         text-decoration: none;
         padding: 3px 7px;
@@ -284,6 +284,100 @@ nav ul h4:first-of-type {
                 display: none; /* Hide sidebar on small screens */
             }
         }
+
+nav, nav ul, nav li, nav a, nav h4 {
+    font-weight: normal !important; /* Ensure all elements inside nav have normal font weight */
+}
+/* Adjust the gap between menu items */
+nav ul {
+    padding: 0; /* Remove padding from the unordered list */
+    margin: 0; /* Remove margin from the unordered list */
+}
+
+nav li {
+    margin: 10px; /* Remove margin from list items */
+    padding: 0; /* Remove padding from list items */
+    list-style: none; /* Remove default list styling */
+}
+/* Reduce margin and padding for list items */
+nav ul li {
+    margin-bottom: 1px; /* Adjust the value as needed */
+    padding: 0; /* Remove any padding */
+}
+/* Reduce margin and padding for the heading */
+nav ul li h4 {
+    margin-top: 5px;
+}
+/* Increase the font size for list items under "Pages" */
+nav ul li a {
+    font-size: 18px; /* Increase the font size as needed */
+}
+
+        @media only screen and (max-width: 600px) {
+            /* Show mobile navigation and hide desktop navigation on small screens */
+            #desktop-navigation {
+                display: none;
+            }
+
+            #mobile-navigation {
+                display: block;
+            }
+
+            .content-container {
+                margin-left: 0; /* Reset margin for small screens */
+            }
+
+            #sidebar {
+                display: none; /* Hide sidebar on small screens */
+            }
+        }
+
+nav, nav ul, nav li, nav a, nav h4 {
+    font-weight: normal !important; /* Ensure all elements inside nav have normal font weight */
+}
+/* Adjust the gap between menu items */
+nav ul {
+    padding: 0; /* Remove padding from the unordered list */
+    margin: 0; /* Remove margin from the unordered list */
+}
+
+nav li {
+    margin: 10px; /* Remove margin from list items */
+    padding: 0; /* Remove padding from list items */
+    list-style: none; /* Remove default list styling */
+}
+/* Reduce margin and padding for list items */
+nav ul li {
+    margin-bottom: 1px; /* Adjust the value as needed */
+    padding: 0; /* Remove any padding */
+}
+/* Reduce margin and padding for the heading */
+nav ul li h4 {
+    margin-top: 5px;
+}
+/* Increase the font size for list items under "Pages" */
+nav ul li a {
+    font-size: 18px; /* Increase the font size as needed */
+}
+
+        @media only screen and (max-width: 600px) {
+            /* Show mobile navigation and hide desktop navigation on small screens */
+            #desktop-navigation {
+                display: none;
+            }
+
+            #mobile-navigation {
+                display: block;
+            }
+
+            .content-container {
+                margin-left: 0; /* Reset margin for small screens */
+            }
+
+            #sidebar {
+                display: none; /* Hide sidebar on small screens */
+            }
+        }
         /* Reduce the size of the scrollbar */
 #sidebar::-webkit-scrollbar {
     width: 3px; /* Adjust the width as needed */
@@ -350,7 +444,7 @@ nav ul li a {
   background-color: #f44336; /* Background color for active link */
   border-radius: 10px; /* Rounded corners */
   padding: 2px 5px; /* Increase the size of the background color */
-  margin-right: 10px; /* Move the active button slightly to the right */
+  margin-right: 20px; /* Move the active button slightly to the right */
   text-decoration: none;
 }
 /* Adjusting margin to reduce gap between sections */
