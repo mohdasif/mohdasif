@@ -475,6 +475,29 @@ nav ul li a[href='https://www.amazon.in/shop/mohdasif'] {
 a {
     text-decoration: none;
 }
+/**** STYLE FOR ALL NAV LINKS BUT SKIP FIRST TWO ****/
+
+/* Style only the links AFTER "Links" heading */
+nav ul li:nth-child(n+0) a {
+  background-color: #fff; /* White background */
+  color: grey;
+  padding: 10px 0; /* Top & Bottom padding */
+  width: 110px;    /* Fixed width for all buttons */
+  height: 35px;    /* Fixed height */
+  display: inline-block;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: none;
+  line-height: 14px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+/* Optional: Remove bullet points from all <li> */
+nav ul li {
+  list-style-type: none;
+}
+
 </style>
 
 </head>
@@ -495,10 +518,10 @@ a {
 
     <!-- Mobile Navigation -->  
     <div id="mobile-navigation">  
-        <a href="/"><i class="fa-solid fa-house" style="color: #343a40;"></i></a>
+        <a href="/"><i class="fa-solid fa-house" style="color: #007E8F;"></i></a>
         <a href="/videos"><i class="fa-solid fa-play" style="color: #74c0f5;"></i></a>
-        <a href="/mushaira"><i class="fa-solid fa-feather" style="font-size: 17px; color: #007E8F;"></i></a>
-        <a href="https://m.youtube.com/@mohdasif/shorts"><i class="fa-brands fa-youtube" style="font-size: 17px; color: #ff0000;"></i></a>
+        <a href="https://clubhouse.com/@mohdasif"><i class="fa-solid fa-microphone" style="font-size: 17px; color: #36454F;"></i></a>
+        <a href="https://www.amazon.in/shop/mohdasif"><i class="fa-solid fa-bag-shopping" style="color: #4CAF50;"></i></a>
         <a href="https://telegram.me/mohdasif"><i class="fa-regular fa-comment-dots" style="font-size: 17px;"></i></a>
     </div>
 
