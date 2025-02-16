@@ -564,7 +564,9 @@ nav ul li {
         <a href="/"><i class="fa-solid fa-house" style="font-size: 18px; color: #007E8F;"></i></a>
         <a href="/videos"><i class="fa-solid fa-play" style="font-size: 18px; color: #74c0f5;"></i></a>
         <a href="/store"><i class="fa-solid fa-bag-shopping" style="font-size: 18px; color: #4CAF50;"></i></a>
-        <a href="https://www.amazon.in/shop/mohdasif"><i class="fa-brands fa-amazon" style="font-size: 18px; color: #232F3E;"></i></a>
+        <a href="https://www.amazon.in/shop/mohdasif" id="amazonLink">
+  <i class="fa-brands fa-amazon" style="font-size: 18px; color: #232F3E;"></i>
+</a>
         <a href="https://telegram.me/mohdasif"><i class="fa-regular fa-comment-dots" style="font-size: 18px;"></i></a>
     </div>
 
@@ -623,6 +625,27 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const amazonLink = document.getElementById('amazonLink');
+
+  amazonLink.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const androidIntentLink = 'intent://www.amazon.in/shop/mohdasif#Intent;scheme=https;package=in.amazon.mShop.android.shopping;end;';
+    const fallbackUrl = 'https://www.amazon.in/shop/mohdasif';
+
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      window.location.href = androidIntentLink;
+      setTimeout(() => {
+        window.location.href = fallbackUrl; // Fallback in case the intent fails
+      }, 1500);
+    } else {
+      window.location.href = fallbackUrl; // iOS and Desktop
+    }
+  });
 });
 </script>
 
@@ -773,9 +796,8 @@ document.addEventListener('DOMContentLoaded', function () {
         /* Move to Top Button */
         .move-to-top {
             position: fixed;
-            bottom: 10px; /* Distance from the bottom */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Adjust for button width */
+            bottom: 20px; /* Distance from the bottom */
+            right: 30px; /* Distance from the right side */
             font-size: 20px; /* Icon size */
             color: #333333; /* Black arrow color */
             background-color: #ffffff; /* Slightly off-white background */
@@ -807,31 +829,48 @@ document.addEventListener('DOMContentLoaded', function () {
     </style>
 
     <script>
-        // Move to Top Button Functionality
-        const moveToTopButton = document.getElementById('moveToTop');
-        let lastScrollY = 0; // Keep track of the last scroll position
+// Move to Top Button functionality
+const moveToTopButton = document.getElementById('moveToTop');
+let lastScrollY = window.scrollY;
 
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
+function handleScroll() {
+    const currentScrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
 
-            // Check if scrolling up and past the threshold
-            if (currentScrollY < lastScrollY && currentScrollY > 300) {
-                moveToTopButton.classList.add('visible');
-            } else {
-                moveToTopButton.classList.remove('visible');
-            }
+    if (window.innerWidth >= 768) {
+        // Desktop: Show after scrolling 100px
+        if (currentScrollY > 100) {
+            moveToTopButton.classList.add('visible');
+        } else {
+            moveToTopButton.classList.remove('visible');
+        }
+    } else {
+        // Mobile: Show when scrolling up past 300px OR near bottom 80%
+        if (
+            (currentScrollY < lastScrollY && currentScrollY > 300) ||
+            (currentScrollY + windowHeight > documentHeight * 0.8)
+        ) {
+            moveToTopButton.classList.add('visible');
+        } else {
+            moveToTopButton.classList.remove('visible');
+        }
+    }
 
-            // Update the last scroll position
-            lastScrollY = currentScrollY;
-        });
+    lastScrollY = currentScrollY;
+}
 
-        // Scroll to the top when the button is clicked
-        moveToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+window.addEventListener('scroll', handleScroll);
+
+moveToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+});
+
+// Initial state check on load (optional)
+handleScroll();
     </script>
 
 </body>
