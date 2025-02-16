@@ -526,7 +526,12 @@ nav ul li:nth-child() a {
 nav ul li {
   list-style-type: none;
 }
-
+    /* Media query to hide the menu toggle on desktop view */
+    @media (min-width: 601px) {
+        .menu-toggle {
+            display: none; /* Hide the menu toggle on larger screens */
+        }
+    }
 </style>
 
 
