@@ -462,37 +462,39 @@ nav li a {
     display: inline-block; /* Ensures margin-bottom works */
     margin-left: -10px;
 }
-/* Specific styling for About link */
-nav ul li a[href='/about'] {
-  background-color: #808080; /* White background */
+/* Specific styling for Videos link */
+nav ul li a[href='/videos'] {
+  background-color: grey; /* White background */
   color: white;
   padding: 10px 0; /* Top & Bottom padding */
-  width: 100px;    /* Fixed width for all buttons */
+  width: 110px;    /* Fixed width for all buttons */
   height: 35px;    /* Fixed height */
   display: inline-block;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 10px;
   text-decoration: none;
-  line-height: 13px;
+  line-height: 15px;
   box-sizing: border-box;
   margin-bottom: 5px;
+  font-size:15px;
 }
 
 
-/* Specific styling for Poetry link */
-nav ul li a[href='https://mohdasif.in'] {
-  background-color: #808080; /* White background */
+/* Specific styling for Mushaira link */
+nav ul li a[href='/mushaira'] {
+  background-color: grey; /* White background */
   color: white;
   padding: 10px 0; /* Top & Bottom padding */
-  width: 100px;    /* Fixed width for all buttons */
+  width: 110px;    /* Fixed width for all buttons */
   height: 35px;    /* Fixed height */
   display: inline-block;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 10px;
   text-decoration: none;
-  line-height: 13px;
+  line-height: 15px;
   box-sizing: border-box;
   margin-bottom: 5px;
+  font-size:15px;
 }
 
 
@@ -542,7 +544,65 @@ nav ul li {
             display: none; /* Hide the menu toggle on larger screens */
         }
     }
-</style>
+    .footer {
+      background-color: #f8f8f8;
+      padding: 40px 0;
+    }
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-section {
+      flex: 1 0 100%;
+      padding-left: 20px; /* Add left padding */
+      box-sizing: border-box; /* Include padding in width calculation */
+      margin-bottom: 20px;
+      text-align: left; /* Align text to the left */
+    }
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: left; /* Align title to the left */
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+    .footer-section ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: normal; /* Change font weight to normal */
+    }
+    .footer-section ul li a:hover {
+      color: #007bff;
+      font-weight: normal; /* Change font weight to normal */
+    }
+    .privacy-policy {
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+        @media (min-width: 768px) {
+            .footer-section {
+                flex: 1; /* Adjust width for desktop to allow sections to grow */
+            }
+
+            .footer-section:first-child {
+                text-align: left; /* Align first section (Pages) to the left */
+            }
+
+            .footer-section:last-child {
+                text-align: right; /* Align last section (Shop) to the right */
+            }
+        }
+    </style>
 
 </head>
 
@@ -897,6 +957,19 @@ moveToTopButton.addEventListener('click', () => {
 // Initial state check on load
 handleScroll();
     </script>
+
+<!-- Footer Section -->
+<div class="privacy-policy">
+    <a href="/daagh-dehlvi" style="font-weight: normal;">Daagh Dehlvi</a> |
+    <a href="/faiz-ahmad" style="font-weight: normal;">Faiz Ahmad</a> |
+    <a href="/jaun-elia" style="font-weight: normal;">Jaun Elia</a> |
+    <a href="/mirza-ghalib" style="font-weight: normal;">Mirza Ghalib</a> |
+    <p>अब के हम बिछड़े तो शायद कभी ख़्वाबों में मिले</p>
+</div>
+
+</footer>
+</div> <!-- Close the page-container div here. -->
+
 
 </body>
 </html>
