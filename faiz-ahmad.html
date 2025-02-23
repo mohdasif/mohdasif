@@ -858,7 +858,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <!-- Move to Top Button -->
     <div id="moveToTop" class="move-to-top">
-        <i class="fa-solid fa-chevron-up" style="color: #808080;"></i>
+        <i class="fa-solid fa-chevron-up" style="color: #007E8F;"></i>
     </div>
 
     <style>
@@ -866,11 +866,11 @@ document.addEventListener('DOMContentLoaded', function () {
         .move-to-top {
             position: fixed;
             bottom: 20px; /* Distance from the bottom */
-            right: 30px; /* Distance from the right side */
-            font-size: 17px; /* Icon size */
+            left: 50%; /* Move it to the horizontal center */
+            transform: translateX(-50%); /* Offset it by half its width to truly center */
+            font-size: 20px; /* Icon size */
             color: #333333; /* Black arrow color */
             background-color: #ffffff; /* Slightly off-white background */
-            border: 1px solid #808080; /* Thin light gray border */
             border-radius: 50%; /* Circle shape */
             width: 35px; /* Circle size */
             height: 35px; /* Circle size */
