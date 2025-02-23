@@ -734,17 +734,12 @@ document.addEventListener('DOMContentLoaded', function () {
 <!-- Page Container -->
 <div class="page-container">
 
-<div class="container" id="container" style="margin-top: 25px">
+<div class="container" id="container" style="margin-top: 20px">
     <!-- Your content here -->
-    <div class="categories">
-          <br> <!-- Line break added here --> 
-        <a href="https://mohdasif.in/mir-taqi-mir" class="active">Mir Taqi Mir</a>
-        <a href="https://mohdasif.in/mirza-ghalib" class="category-link">Mirza Ghalib</a>        
-        <a href="https://mohdasif.in/jaun-elia" class="category-link">Jaun Elia</a>
-        <a href="https://mohdasif.in/daagh-dehlvi" class="category-link">Daagh Dehlvi</a> 
-        <a href="https://mohdasif.in/faiz-ahmad" class="category-link">Faiz Ahmad</a>
+    <div class="categories">      
     </div>
 </div>
+
 <div class="container">
     <div class="post">
         <p>बे-ख़ुदी ले गई कहाँ हम को</p>
@@ -933,7 +928,7 @@ function handleScroll() {
     // Apply special behavior only for mobile (≤600px)
     if (window.innerWidth <= 600) {
         if (currentScrollY + windowHeight >= documentHeight - 10) {
-            moveToTopButton.style.bottom = "80px"; // Move up when at page end
+            moveToTopButton.style.bottom = "50px"; // Move up when at page end
         } else {
             moveToTopButton.style.bottom = "20px"; // Default position on mobile
         }
@@ -968,6 +963,6 @@ handleScroll();
 </footer>
 </div> <!-- Close the page-container div here. -->
 
-<br><br>
+<br>
 </body>
 </html>
