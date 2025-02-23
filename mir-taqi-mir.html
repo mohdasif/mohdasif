@@ -933,7 +933,7 @@ function handleScroll() {
     // Apply special behavior only for mobile (≤600px)
     if (window.innerWidth <= 600) {
         if (currentScrollY + windowHeight >= documentHeight - 10) {
-            moveToTopButton.style.bottom = "75px"; // Move up when at page end
+            moveToTopButton.style.bottom = "50px"; // Move up when at page end
         } else {
             moveToTopButton.style.bottom = "20px"; // Default position on mobile
         }
@@ -959,12 +959,12 @@ handleScroll();
     </script>
 
 <!-- Footer Section -->
-<div class="privacy-policy">
+<div class="privacy-policy" style="margin-top: 0;">
     <a href="/mirza-ghalib" style="font-weight: normal;">Mirza Ghalib</a> |
     <a href="/jaun-elia" style="font-weight: normal;">Jaun Elia</a> | 
     <a href="/faiz-ahmad" style="font-weight: normal;">Faiz Ahmad</a> |  
     <a href="/daagh-dehlvi" style="font-weight: normal;">Daagh Dehlvi</a>
-    <p>This page features works attributed to their respective poets</p>
+    <p><br</p>
 </div>
 
 </footer>
