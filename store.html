@@ -675,6 +675,46 @@ nav ul li {
                 text-align: right; /* Align last section (Shop) to the right */
             }
         }
+
+        /* Thin-style for all icons: black by default, grey on hover */
+.house-thin-style,
+.feather-thin-style,
+.bag-thin-style,
+.camera-thin-style,
+.play-thin-style,
+.amazon-brand-style,
+.comment-thin-style {
+  color: transparent;
+  -webkit-text-stroke: 0.8px #000; /* black outline by default */
+  font-size: 24px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.amazon-brand-style:hover,
+.house-thin-style:hover,
+.feather-thin-style:hover,
+.camera-thin-style:hover,
+.bag-thin-style:hover,
+.play-thin-style:hover,
+.comment-thin-style:hover {
+  -webkit-text-stroke: 0.8px #6C757D; /* soft grey on hover */
+  opacity: 0.85;
+}
+
+.bars-light-style {
+  color: transparent;
+  -webkit-text-stroke: 0.9px #333;  /* mimic light look */
+  font-size: 24px;
+  transform: scale(0.85);           /* scale down to match visual size */
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.bars-light-style:hover {
+  -webkit-text-stroke: 0.9px #000;
+  opacity: 1;
+}
     </style>
 
     <!-- Structured Data (Schema Markup for SEO) -->
@@ -729,19 +769,17 @@ nav ul li {
         <a href="https://www.amazon.in/shop/mohdasif" style="position: absolute; right: 180px;"><i class="fa-solid fa-bag-shopping"></i></a>
     </div>
 
-<!-- Mobile Navigation -->  
-<div id="mobile-navigation">  
-    <a href="/"><i class="fa-solid fa-house" style="font-size: 18px; color: #888;"></i></a>
-    <a href="/videos"><i class="fa-solid fa-play" style="font-size: 18px; color: #888;"></i></a>
-    <a href="/store"><i class="fa-solid fa-bag-shopping" style="font-size: 18px; color: #888;"></i></a>
-    <a href="https://www.amazon.in/shop/mohdasif"><i class="fa-brands fa-amazon" style="font-size: 18px; color: #888;"></i></a>
-    <a href="/contact"><i class="fa-regular fa-comment-dots" style="font-size: 18px; color: #888;"></i></a>
-</div>
+        <!-- Mobile Navigation -->  
+    <div id="mobile-navigation">  
+        <a href="/"><i class="fa-solid fa-house house-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/videos"><i class="fa-solid fa-play play-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/store"><i class="fa-solid fa-bag-shopping bag-thin-style" style="font-size: 18px;"></i></a>
+        <a href="https://www.amazon.in/shop/mohdasif"><i class="fa-brands fa-amazon" style="font-size: 18px; color: #666;"></i></a>
+        <a href="/contact"><i class="fa-regular fa-comment-dots" style="font-size: 18px; color: #666;"></i></a>
+    </div>
+    
 
-
-
-
-<div class="menu-toggle"><i class="fa-solid fa-bars" style="color: #888;"></i></div>
+<div class="menu-toggle"><i class="fa-solid fa-bars bars-light-style"></i></div>
 <nav>
   <ul>
     <li><h4 style="margin-bottom: 50px;"></h4></li>
