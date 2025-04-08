@@ -691,20 +691,178 @@ nav ul li {
   -webkit-text-stroke: 0.9px #000;
   opacity: 1;
 }
-    </style>
+.bottom-nav {
+  position: fixed;
+  bottom: 20px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 0;
+  z-index: 999;
+  box-shadow: none;
+}
 
-</head>
+/* Desktop - centered */
+@media (min-width: 601px) {
+  .bottom-nav {
+    left: 15%;
+    transform: translateX(-80%);
+  }
+}
 
+/* Mobile - aligned to right middle */
+@media (max-width: 600px) {
+  .bottom-nav {
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    right: 3px;
+    transform: translateY(-50%);
+  }
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+/* Menu button styled as a circle (desktop) */
+.menu-button {
+  background: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+/* Menu button on mobile - flat look */
+@media (max-width: 600px) {
+  .menu-button {
+    background: transparent;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
+/* Bottom dropdown menu */
+.dropdown {
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: none;
+  z-index: 1000;
+
+  width: auto;
+  max-width: 250px;
+  min-width: 140px;
+  padding: 10px 12px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/* Show the dropdown */
+.dropdown.show {
+  display: block;
+}
+
+/* Dropdown link styles */
+.dropdown a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Desktop position: center under button */
+@media (min-width: 601px) {
+  .dropdown {
+    left: 80%;
+    bottom: 70px;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown {
+    left: auto;
+    right: 40px; /* Adjust as needed to align it to the left of the button */
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Show/hide per device */
+.mobile-only,
+.desktop-only {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 601px) {
+  .desktop-only {
+    display: inline-flex;
+  }
+}
+@media (min-width: 601px) {
+  .dropdown {
+    left: 70%; /* a bit more right than 60% */
+    bottom: 70px;
+    transform: translateX(-25%) translateY(-10px); /* balances the shift */
+  }
+}
+</style>
+
+<!-- Move to Top Button -->
+<div id="moveToTop" class="move-to-top">
+    <i class="fa-solid fa-chevron-up" style="color: #1ABC9C;"></i>
+</div>
+    
 <body>
+<!-- Sidebar -->
+<div id="sidebar">
+    <div class="sidebar-section">
+        <a href="/" class="active">Home</a>
+        <a href="/islam">Islam</a>
+        <a href="/fitness">Fitness</a>
+        <a href="/books">Books</a>
+        <a href="https://mohdasif.in">Poetry</a>
+    </div>
+</div>
+
 
     <!-- Desktop Navigation -->
     <div id="desktop-navigation">
         <a href="/">Home</a>
-        <a href="https://mohdasif.com/blog">Blog</a>
+        <a href="/blog">Blog</a>
         <a href="/about">About</a>
-        <a href="/store">Store</a>     
+        <a href="https://mohdasif.in/store">Store</a>     
         
-        <a href="https://www.amazon.in/shop/mohdasif" style="position: absolute; right: 180px;"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="https://www.amazon.in/shop/mohdasif" style="position: absolute; right: 200px;"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="https://www.linkedin.com/in/mohdasif" style="position: absolute; right: 162px;"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:hi@mohdasif.com" style="position: absolute; right: 140px;"><i class="fa-solid fa-envelope"></i></a>
     </div>
 
         <!-- Mobile Navigation -->  
@@ -715,18 +873,44 @@ nav ul li {
         <a href="https://www.amazon.in/shop/mohdasif"><i class="fa-brands fa-amazon" style="font-size: 18px; color: #666;"></i></a>
         <a href="/contact"><i class="fa-solid fa-comment-dots comment-thin-style" style="font-size: 18px;"></i></a>
     </div>
+  
+    
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <div class="menu-wrapper">
+    
+    <!-- Mobile version (⋮) -->
+    <button class="menu-button mobile-only" onclick="toggleMenu()">||</button>
+
+    <!-- Desktop version (⋯) -->
+    <button class="menu-button desktop-only" onclick="toggleMenu()">⋯</button>
+
+    <div class="dropdown" id="menu">
+        <a href="/mirza-ghalib">Mirza Ghalib</a>
+        <a href="/mir-taqi-mir">Mir Taqi Mir</a>
+        <a href="/jaun-elia">Jaun Elia</a>
+        <a href="/faiz-ahmad">Faiz Ahmad</a>
+        <a href="/daagh-dehlvi">Daagh Dehlvi</a>
+    </div>
+
+  </div>
+</div>
 
 
 <div class="menu-toggle"><i class="fa-solid fa-bars bars-light-style"></i></div>
 <nav>
-  <ul>
+    <ul>
     <li><h4 style="margin-bottom: 50px;"></h4></li>
-        <li><a href="/mirza-ghalib">Mirza Ghalib</a></li>
-        <li><a href="/mir-taqi-mir">Mir Taqi Mir</a></li>
-        <li><a href="/jaun-elia">Jaun Elia</a></li>
-        <li><a href="/faiz-ahmad">Faiz Ahmad</a></li>
-        <li><a href="/daagh-dehlvi">Daagh Dehlvi</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="/islam">Islam</a></li>
+    <li><a href="/fitness">Fitness</a></li>
+    <li><a href="/books">Books</a></li>
     </ul>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <a href="https://mohdasif.com">[ mohdasif.com ]</a>
+    </div>
 </nav>
 
 <!-- Place this script at the bottom of the page -->
@@ -953,6 +1137,48 @@ document.addEventListener('DOMContentLoaded', function () {
     function closeNav() {
         document.querySelector(".sidebar").style.width = "0";
     }
+</script>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+
+  const menuWrapper = document.querySelector('.menu-wrapper');
+  const desktopQuery = window.matchMedia('(min-width: 601px)');
+
+  function closeMenuIfClickedOutside(e) {
+    if (!menuWrapper.contains(e.target)) {
+      document.getElementById('menu').classList.remove('show');
+    }
+  }
+
+  window.addEventListener('click', closeMenuIfClickedOutside);
+  window.addEventListener('touchstart', closeMenuIfClickedOutside); // 👈 this fixes mobile
+
+  function updateMenuVisibility() {
+    const scrollTop = window.scrollY;
+    const scrollBottom = window.innerHeight + scrollTop >= document.body.scrollHeight;
+
+    if (desktopQuery.matches) {
+      menuWrapper.style.display = 'inline-flex';
+    } else {
+      if (scrollTop === 0 || scrollBottom) {
+        menuWrapper.style.display = 'inline-flex';
+      } else {
+        menuWrapper.style.display = 'none';
+        document.getElementById('menu').classList.remove('show');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateMenuVisibility);
+  window.addEventListener('resize', updateMenuVisibility);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    updateMenuVisibility();
+  });
 </script>
 
     <!-- Other existing content -->

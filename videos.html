@@ -726,6 +726,7 @@ nav ul li {
   -webkit-text-stroke: 0.9px #000;
   opacity: 1;
 }
+
     </style>
 
 
@@ -1079,6 +1080,47 @@ moveToTopButton.addEventListener('click', () => {
 // Initial state check on load
 handleScroll();
     </script>
+ <script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+
+  const menuWrapper = document.querySelector('.menu-wrapper');
+  const desktopQuery = window.matchMedia('(min-width: 601px)');
+
+  function closeMenuIfClickedOutside(e) {
+    if (!menuWrapper.contains(e.target)) {
+      document.getElementById('menu').classList.remove('show');
+    }
+  }
+
+  window.addEventListener('click', closeMenuIfClickedOutside);
+  window.addEventListener('touchstart', closeMenuIfClickedOutside); // 👈 this fixes mobile
+
+  function updateMenuVisibility() {
+    const scrollTop = window.scrollY;
+    const scrollBottom = window.innerHeight + scrollTop >= document.body.scrollHeight;
+
+    if (desktopQuery.matches) {
+      menuWrapper.style.display = 'inline-flex';
+    } else {
+      if (scrollTop === 0 || scrollBottom) {
+        menuWrapper.style.display = 'inline-flex';
+      } else {
+        menuWrapper.style.display = 'none';
+        document.getElementById('menu').classList.remove('show');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateMenuVisibility);
+  window.addEventListener('resize', updateMenuVisibility);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    updateMenuVisibility();
+  });
+</script>   
 
     <!-- Footer Section -->
     <div class="privacy-policy">
