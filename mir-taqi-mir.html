@@ -1134,8 +1134,9 @@ document.addEventListener('DOMContentLoaded', function () {
         /* Move to Top Button */
         .move-to-top {
             position: fixed;
-            bottom: 20px; /* Distance from the bottom */
+            bottom: 10px; /* Distance from the bottom */
             left: 50%; /* Move it to the horizontal center */
+            margin-bottom: 10px;
             transform: translateX(-50%); /* Offset it by half its width to truly center */
             font-size: 17px; /* Icon size */
             color: #333333; /* Black arrow color */
@@ -1152,18 +1153,21 @@ document.addEventListener('DOMContentLoaded', function () {
             transition: opacity 0.3s, color 0.3s, transform 0.3s; /* Smooth effects */
         }
 
-        /* Show button when visible */
-        .move-to-top.visible {
-            opacity: 1; /* Fully visible */
-        }
 
-        /* Adjust the button for larger screens (desktop) */
-        @media (min-width: 768px) {
-            .move-to-top {
-                left: auto; /* Remove left positioning */
-                right: 20px; /* Fixed to the right side */
-            }
-        }
+    /* Show button when visible */
+    .move-to-top.visible {
+        opacity: 1; /* Fully visible */
+    }
+
+/* Adjust for desktop */
+@media (min-width: 601px) {
+    .move-to-top {
+        left: auto;
+        right: 100px; /* Slightly more to the left than 20px */
+        bottom: 15px; /* Slightly lower */
+        transform: none;
+    }
+}
     </style>
 
     <script>

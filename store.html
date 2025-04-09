@@ -318,7 +318,6 @@ margin-top: 10px; /* Add margin for spacing */
         a {
             text-decoration: none;
             color: #4285f4;
-            font-weight: bold;
         }
 
         /* New style for left-aligning specific sections */
@@ -346,10 +345,6 @@ margin-top: 10px; /* Add margin for spacing */
             margin: 5px;
             cursor: pointer;
             font-size: 15px; /* Increase the font size */
-        }
-
-        button:hover {
-            background-color: #000000 !important; /* Change the hover background color */
         }
 
         @media only screen and (max-width: 600px) {
@@ -1200,12 +1195,13 @@ document.addEventListener('DOMContentLoaded', function () {
         /* Move to Top Button */
         .move-to-top {
             position: fixed;
-            bottom: 20px; /* Distance from the bottom */
-            right: 30px; /* Distance from the right side */
+            bottom: 10px; /* Distance from the bottom */
+            left: 50%; /* Move it to the horizontal center */
+            margin-bottom: 10px;
+            transform: translateX(-50%); /* Offset it by half its width to truly center */
             font-size: 17px; /* Icon size */
             color: #333333; /* Black arrow color */
             background-color: #ffffff; /* Slightly off-white background */
-            border: 1px solid #808080; /* Thin light gray border */
             border-radius: 50%; /* Circle shape */
             width: 35px; /* Circle size */
             height: 35px; /* Circle size */
@@ -1218,18 +1214,21 @@ document.addEventListener('DOMContentLoaded', function () {
             transition: opacity 0.3s, color 0.3s, transform 0.3s; /* Smooth effects */
         }
 
-        /* Show button when visible */
-        .move-to-top.visible {
-            opacity: 1; /* Fully visible */
-        }
 
-        /* Adjust the button for larger screens (desktop) */
-        @media (min-width: 768px) {
-            .move-to-top {
-                left: auto; /* Remove left positioning */
-                right: 20px; /* Fixed to the right side */
-            }
-        }
+    /* Show button when visible */
+    .move-to-top.visible {
+        opacity: 1; /* Fully visible */
+    }
+
+/* Adjust for desktop */
+@media (min-width: 601px) {
+    .move-to-top {
+        left: auto;
+        right: 100px; /* Slightly more to the left than 20px */
+        bottom: 15px; /* Slightly lower */
+        transform: none;
+    }
+}
     </style>
 
     <script>
@@ -1264,9 +1263,9 @@ function handleScroll() {
     // Apply special behavior only for mobile (≤600px)
     if (window.innerWidth <= 600) {
         if (currentScrollY + windowHeight >= documentHeight - 10) {
-            moveToTopButton.style.bottom = "90px"; // Move up when at page end
+            moveToTopButton.style.bottom = "20px"; // Move up when at page end
         } else {
-            moveToTopButton.style.bottom = "10px"; // Default position on mobile
+            moveToTopButton.style.bottom = "20px"; // Default position on mobile
         }
     } else {
         // Default position for desktops (no extra shift)
