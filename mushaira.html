@@ -1,44 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Basic Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Asif's Amazon Affiliate Store - Find the best products in India including electronics, fitness, home appliances, and more at affordable prices.">
-    <meta name="keywords" content="Amazon Affiliate, India, Electronics, Fitness, Home Appliances, Best Deals, Buy Online, Asif Store">
-    <meta name="author" content="Asif">
-
-    <!-- Open Graph Meta Tags for social sharing -->
-    <meta property="og:title" content="Asif's Amazon Affiliate Store | Best Deals in India">
-    <meta property="og:description" content="Explore the best deals on electronics, fitness, home appliances, and more at Asif's Amazon Affiliate Store.">
-    <meta property="og:image" content="https://imgur.com/yMpZ3pQ.png">
-    <meta property="og:url" content="https://www.yourstoreurl.com">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Asif's Amazon Affiliate Store">
-    <meta name="twitter:description" content="Shop the best products in electronics, fitness, and more.">
-    <meta name="twitter:image" content="https://imgur.com/yMpZ3pQ.png">
-
-    <!-- Title Tag -->
-    <title>Asif | Shop | India </title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="https://imgur.com/yMpZ3pQ.png">
-
-    <!-- Font Awesome (for icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- Google Fonts (for typography) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asif | Mushaira</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" href="https://imgur.com/yMpZ3pQ.png" />
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: #fff;
             margin: 0;
             padding: 0;
             font-family: 'Teimpos', 'Roboto', 'Sentinel', 'Helvetica', sans-serif;
@@ -64,50 +37,34 @@
             display: block; /* Ensure visibility */
         }
 
-        /* Styles for mobile navigation */
-        #mobile-navigation {
-            background-color: #FDFCFA;
-            color: #000;
-            padding: 10px;
-            display: none; /* Hide by default */
-            font-size: 18px; /* Font size */
-            position: fixed;
-            top: 0;
-            left: 0px;
-            right: 10px;
-            width: 100%;
-        }
-
-        /* Common link styles for both desktop and mobile */
         #desktop-navigation a,
         #mobile-navigation a {
             color: inherit;
             margin: 0 18px;
             text-decoration: none;
             font-weight: bold;
-            display: inline-block; /* Ensure proper spacing */
+            display: inline-block; /* Make sure the links are on separate lines */
         }
 
-
-        /* Remove margin from the last link */
-        #desktop-navigation a:last-child,
-        #mobile-navigation a:last-child {
-            margin-right: 0;
+        #desktop-navigation a:last-child {
+            margin-right: 0; /* Remove margin from the last element */
         }
 
+#mobile-navigation {
+    background-color: #FDFCFA;
+    color: #000;
+    padding: 10px;
+    display: none;
+    font-size: 18px; /* Adjust the font size as needed */
+    position: fixed; /* Ensure it stays fixed on the screen */
+    top: 0; /* Align to the top edge */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Make it full width */
+}
 
-        @media only screen and (min-width: 601px) {
-            /* Show desktop navigation on larger screens */
-            #desktop-navigation {
-                display: block;
-            }
-            /* Hide mobile navigation on larger screens */
-            #mobile-navigation {
-                display: none;
-            }
-        }
-
-
+#mobile-navigation a:first-child {
+    margin-left: 30px; /* Adjust this value as needed to create the desired space */
+}
         header {
             background-color: #333;
             color: white;
@@ -118,233 +75,86 @@
             z-index: 1000;
         }
 
-section {
-    padding: 30px 20px;
-    text-align: left;
-}
-
-.blog-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid with minimum item width of 250px */
-    gap: 20px; /* Gap between grid items */
-    grid-auto-flow: dense; /* Dense packing of grid items */
-}
-
-.blog-card {
-    flex: 1 1 calc(25% - 20px); /* Adjust width for three columns */
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease-in-out;
-    margin-bottom: 10px;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
-}
-
-.blog-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-}
-
-.blog-card-content {
-    padding: 10px; /* Reduced padding */
-}
-
-.blog-card-content h3 {
-    margin: 5px 0 0; /* Reduced margin around the title */
-}
-
-/* CSS for centering only the heading "Latest Blog Posts" */
-section h2 {
-    text-align: center;
-margin-top: 10px; /* Add margin for spacing */
-    margin-bottom: 50px; /* Add margin for spacing */
-}
-        /* CSS for centering the feature section and setting up grid layout */
-        .featured-section {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Three columns, each occupying 1/3 of the available space */
-            gap: 20px; /* Gap between grid items */
-            justify-content: center; /* Center the grid */
-            margin-top: 10px; /* Add margin for spacing */
-        }
-
-        .featured-post {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .featured-post:hover {
-            transform: translateY(-5px);
-        }
-
-        .featured-post img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .featured-post-content {
-            padding: 20px;
-        }
-
-        .footer {
-            background-color: #f8f8f8;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-section {
-            flex: 1 0 100%;
-            padding-left: 20px; /* Add left padding */
-            box-sizing: border-box; /* Include padding in width calculation */
-            margin-bottom: 20px;
-            text-align: left; /* Align text to the left */
-        }
-
-        .footer-section h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            text-align: left; /* Align title to the left */
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section ul li a {
-            color: #333;
-            text-decoration: none;
-            font-weight: normal; /* Change font weight to normal */
-        }
-
-        .footer-section ul li a:hover {
-            color: #007bff;
-            font-weight: normal; /* Change font weight to normal */
-        }
-
-        .privacy-policy {
-            font-size: 12px;
-            text-align: center;
-            width: 100%;
-            margin-top: 10px;
-        }
-
-        @media (min-width: 768px) {
-            .footer-section {
-                flex: 1;
-            }
-
-            .footer-section:first-child {
-                text-align: left;
-            }
-
-            .footer-section:last-child {
-                text-align: right;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            #desktop-navigation {
-                display: none;
-            }
-
-            #mobile-navigation {
-                display: block;
-            }
-
-            .blog-card {
-                flex: 1 1 100%;
-            }
-
-            .featured-section {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .featured-post {
-                width: 100%;
-            }
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 10px;
-            border-radius: 8px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-
-        li {
-            margin: 10px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #4285f4;
-        }
-
-        /* New style for left-aligning specific sections */
-        .left-align {
+        section {
+            padding: 10px 20px;
             text-align: left;
         }
 
-        /* Center-align the about.me link */
-        .about-me {
-            text-align: center;
+        .blog-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns, each taking up one-third of the available space */
+            gap: 20px; /* Gap between grid items */
+            grid-auto-flow: dense; /* Dense packing of grid items */
         }
 
-        /* Center-align Links */
-        .center-section {
-            text-align: center;
+        .blog-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+            margin-bottom: 10px;
         }
 
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
 
-        button {
-            padding: 10px 20px;
-            background-color: #24a0ed;
-            color: #fff;
-            border: none;
-            border-radius: 15px;
-            margin: 5px;
-            cursor: pointer;
-            font-size: 15px; /* Increase the font size */
+        .blog-card iframe {
+            width: 100%;
+            height: 237px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* CSS for centering only the heading "Latest Blog Posts" */
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px; /* Add margin for spacing */
+        }
+        .categories {
+        text-align: center;
+        margin-bottom: 45px;
+        padding: 10px 23px 10px 25px; /* Adjusted padding */
+        overflow-x: auto; /* Enable horizontal scrolling without displaying the scrollbar */
+        white-space: nowrap; /* Prevent categories from wrapping */
+    }
+
+    /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+        .categories::-webkit-scrollbar {
+        display: none;
+    }
+
+        .category-link {
+        display: inline-block; /* Display categories in a row */
+        margin-right: 18px; /* Adjusted margin for space between category links */
+        color: #000;
+        text-decoration: none;
+        padding: 3px 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #f5f5f5;
+        font-weight: normal; /* Set font weight to normal */
+    }
+
+    .category-link:hover {
+        background-color: #e0e0e0;
+    }
+
+
+
+        /* Media query for mobile view */
+        @media (max-width: 768px) {
+            .blog-cards {
+                grid-template-columns: 1fr; /* Single column layout on mobile */
+            }
+
+            .blog-card iframe {
+                height: 205px; /* Adjusted height for mobile */
+            }
+
+            section {
+                padding: 10px 10px; /* Adjust padding for mobile */
+            }
         }
 
         @media only screen and (max-width: 600px) {
@@ -355,6 +165,15 @@ margin-top: 10px; /* Add margin for spacing */
             #mobile-navigation {
                 display: block;
             }
+        }
+        a {
+            text-decoration: none;
+            color: #4285f4;
+            font-weight: normal;
+        }
+
+        a:hover {
+            text-decoration: none; /* Remove underline on hover */
         }
     /* Sidebar styles */
     #sidebar {
@@ -400,25 +219,52 @@ margin-top: 10px; /* Add margin for spacing */
             font-size: 36px;
             margin-left: 50px;
         }
-
-        @media only screen and (max-width: 600px) {
-            /* Show mobile navigation and hide desktop navigation on small screens */
-            #desktop-navigation {
-                display: none;
-            }
-
-            #mobile-navigation {
-                display: block;
-            }
-
-            .content-container {
-                margin-left: 0; /* Reset margin for small screens */
-            }
-
-            #sidebar {
-                display: none; /* Hide sidebar on small screens */
-            }
+        .menu-toggle {
+            display: block; /* Show the menu toggle by default */
+            position: fixed;
+            top: 9px;
+            left: 30px;
+            font-size: 21px; /* Increase the font size */
+            cursor: pointer;
+            z-index: 1000; /* Ensure the menu icon is on top */
         }
+
+        nav {
+            float: left;
+            width: 33%;
+            background-color: #f1f1f1;
+            padding: 32px;
+            height: 100vh;
+            position: fixed;
+            top: 0; /* Position at the top */
+            overflow: auto;
+            transition: transform 0.9s ease;
+            transform: translateX(-100%);
+            z-index: 999; /* Ensure the sidebar is on top */
+        }
+        nav.menu-open {
+            transform: translateX(0);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+    margin-bottom: 3px;
+
+}
+nav ul li:first-child {
+    margin-top: 15px; /* Adjust the margin as needed */
+}
+
+nav ul h4 {
+    margin-bottom: 10px; /* Add space above all h4 elements */
+}
+
+nav ul h4:first-of-type {
+    margin-top: 35px; /* Add additional space above the first h4 */
+margin-bottom: 20px; /* Add additional space above the first h4 */
+}
 
         @media only screen and (max-width: 600px) {
             /* Show mobile navigation and hide desktop navigation on small screens */
@@ -464,6 +310,130 @@ margin-top: 10px; /* Add margin for spacing */
             display: none; /* Hide the menu toggle on larger screens */
         }
     }
+
+nav, nav ul, nav li, nav a, nav h4 {
+    font-weight: normal !important; /* Ensure all elements inside nav have normal font weight */
+}
+
+
+        @media only screen and (max-width: 600px) {
+            /* Show mobile navigation and hide desktop navigation on small screens */
+            #desktop-navigation {
+                display: none;
+            }
+
+            #mobile-navigation {
+                display: block;
+            }
+
+            .content-container {
+                margin-left: 0; /* Reset margin for small screens */
+            }
+
+            #sidebar {
+                display: none; /* Hide sidebar on small screens */
+            }
+        }
+        /* Reduce the size of the scrollbar */
+#sidebar::-webkit-scrollbar {
+    width: 3px; /* Adjust the width as needed */
+}
+
+/* Handle for the scrollbar */
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of the scrollbar handle */
+    border-radius: 2px; /* Rounded corners for the scrollbar handle */
+}
+
+/* Track for the scrollbar */
+#sidebar::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the scrollbar track */
+}
+
+/* Corner of the scrollbar */
+#sidebar::-webkit-scrollbar-corner {
+    background-color: transparent; /* Color of the scrollbar corner */
+}
+    /* Media query to hide the menu toggle on desktop view */
+    @media (min-width: 768px) {
+        .menu-toggle {
+            display: none; /* Hide the menu toggle on larger screens */
+        }
+    }
+
+/* Active link styles */
+.categories a.active {
+  color: #fff; /* Text color for active link */
+  background-color: #007E8F; /* Background color for active link */
+  border-radius: 10px; /* Rounded corners */
+  padding: 2px 5px; /* Increase the size of the background color */
+  margin-right: 20px; /* Move the active button slightly to the right */
+  text-decoration: none;
+}
+/* Adjusting margin to reduce gap between sections */
+.container {
+    margin-top: 60px; /* Adjust as needed */
+    margin-bottom: -40px; /* Adjust as needed */
+}
+.footer {
+      background-color: #f8f8f8;
+      padding: 40px 0;
+    }
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-section {
+      flex: 1 0 100%;
+      padding-left: 20px; /* Add left padding */
+      box-sizing: border-box; /* Include padding in width calculation */
+      margin-bottom: 20px;
+      text-align: left; /* Align text to the left */
+    }
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: left; /* Align title to the left */
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+    .footer-section ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: normal; /* Change font weight to normal */
+    }
+    .footer-section ul li a:hover {
+      color: #007bff;
+      font-weight: normal; /* Change font weight to normal */
+    }
+    .privacy-policy {
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+        @media (min-width: 768px) {
+            .footer-section {
+                flex: 1; /* Adjust width for desktop to allow sections to grow */
+            }
+
+            .footer-section:first-child {
+                text-align: left; /* Align first section (Pages) to the left */
+            }
+
+            .footer-section:last-child {
+                text-align: right; /* Align last section (Shop) to the right */
+            }
+        }
+        
         .menu-toggle {
             display: block; /* Show the menu toggle by default */
             position: fixed;
@@ -495,7 +465,7 @@ margin-top: 10px; /* Add margin for spacing */
             padding: 0;
         }
         nav ul li {
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 
 }
 nav ul li:first-child {
@@ -670,8 +640,54 @@ nav ul li {
                 text-align: right; /* Align last section (Shop) to the right */
             }
         }
+        .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push footer down */
+    height: 100vh; /* Full height */
+}
 
-        /* Thin-style for all icons: black by default, grey on hover */
+.menu {
+    flex-grow: 1; /* Push footer down */
+    padding-bottom: 50px; /* Creates space between menu and footer */
+}
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+    margin-left: -15px; /* Adjust the value as needed */
+}
+
+
+        .footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 5px 0; /* Reduce padding */
+    width: 100%;
+    font-size: 13px; /* Reduce font size */
+    display: flex;
+    justify-content: center;
+    gap: 3px; /* Reduce spacing between links */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Ensure links don't have extra margin */
+.footer a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0; /* Removes unwanted space */
+    display: inline-block;
+    white-space: nowrap; /* Prevents breaking into multiple lines */
+    padding: 0 2px; /* Add small padding to avoid touching */
+}
+    .footer {
+      background-color: #f1f1f1;
+      padding: 50px 0;
+    }
+
+    /* Thin-style for all icons: black by default, grey on hover */
 .house-thin-style,
 .feather-thin-style,
 .bag-thin-style,
@@ -710,239 +726,44 @@ nav ul li {
   -webkit-text-stroke: 0.9px #000;
   opacity: 1;
 }
-.bottom-nav {
-  position: fixed;
-  bottom: 20px;
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  padding: 0;
-  z-index: 999;
-  box-shadow: none;
-}
 
-/* Desktop - centered */
-@media (min-width: 601px) {
-  .bottom-nav {
-    left: 15%;
-    transform: translateX(-80%);
-  }
-}
+    </style>
 
-/* Mobile - aligned to right middle */
-@media (max-width: 600px) {
-  .bottom-nav {
-    top: 50%;
-    bottom: auto;
-    left: auto;
-    right: 3px;
-    transform: translateY(-50%);
-  }
-}
 
-.menu-wrapper {
-  position: relative;
-}
+  </head>
 
-/* Menu button styled as a circle (desktop) */
-.menu-button {
-  background: #fff;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s ease;
-}
-
-/* Menu button on mobile - flat look */
-@media (max-width: 600px) {
-  .menu-button {
-    background: transparent;
-    width: auto;
-    height: auto;
-    border-radius: 0;
-    padding: 0;
-  }
-}
-
-/* Bottom dropdown menu */
-.dropdown {
-  position: absolute;
-  background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  display: none;
-  z-index: 1000;
-
-  width: auto;
-  max-width: 250px;
-  min-width: 140px;
-  padding: 10px 12px;
-  white-space: nowrap;
-  box-sizing: border-box;
-}
-
-/* Show the dropdown */
-.dropdown.show {
-  display: block;
-}
-
-/* Dropdown link styles */
-.dropdown a {
-  display: block;
-  padding: 8px 12px;
-  font-size: 14px;
-  text-decoration: none;
-  color: #333;
-  cursor: pointer;
-}
-
-.dropdown a:hover {
-  background-color: #f2f2f2;
-}
-
-/* Desktop position: center under button */
-@media (min-width: 601px) {
-  .dropdown {
-    left: 80%;
-    bottom: 70px;
-    transform: translateX(-50%) translateY(-10px);
-  }
-}
-
-@media (max-width: 600px) {
-  .dropdown {
-    left: auto;
-    right: 40px; /* Adjust as needed to align it to the left of the button */
-    bottom: auto;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-/* Show/hide per device */
-.mobile-only,
-.desktop-only {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  .mobile-only {
-    display: inline-flex;
-  }
-}
-
-@media (min-width: 601px) {
-  .desktop-only {
-    display: inline-flex;
-  }
-}
-@media (min-width: 601px) {
-  .dropdown {
-    left: 70%; /* a bit more right than 60% */
-    bottom: 70px;
-    transform: translateX(-25%) translateY(-10px); /* balances the shift */
-  }
-}
-</style>
-
-    <!-- Structured Data (Schema Markup for SEO) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Asif's Amazon Affiliate Store",
-        "description": "Explore and buy top-rated products including electronics, fitness gear, home appliances, and more.",
-        "url": "https://www.yourstoreurl.com",
-        "image": "https://imgur.com/yMpZ3pQ.png",
-        "author": {
-            "@type": "Person",
-            "name": "Asif"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Asif's Store",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://imgur.com/yMpZ3pQ.png"
-            }
-        }
-    }
-    </script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WDE3FNHKN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-2WDE3FNHKN');
-    </script>
-
-    <!-- Meta for Mobile Web App Capabilities -->
-    <meta name="theme-color" content="#333">
-    <meta name="mobile-web-app-capable" content="yes">
-</head>
-
-<body>
-
+  <body>
+    
     <!-- Desktop Navigation -->
     <div id="desktop-navigation">
-        <a href="https://mohdasif.com">Home</a>
-        <a href="https://mohdasif.com/blog">Blog</a>
-        <a href="https://mohdasif.com/about">About</a>
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">About</a>
         <a href="https://mohdasif.in">Shop</a>     
         
-        <a href="https://www.amazon.in/shop/mohdasif" style="position: absolute; right: 220px;"><i class="fa-brands fa-amazon"></i></a>
+        <a href="/photos" style="position: absolute; right: 200px;"><i class="fa-solid fa-camera"></i></a>
+        <a href="/videos" style="position: absolute; right: 162px;"><i class="fa-solid fa-clapperboard"></i></a>
+        <a href="/music" style="position: absolute; right: 140px;"><i class="fa-solid fa-headphones"></i></a> 
     </div>
 
     <!-- Mobile Navigation -->  
     <div id="mobile-navigation">  
-        <a href="https://mohdasif.com"><i class="fa-solid fa-house house-thin-style" style="font-size: 18px;"></i></a>
-        <a href="https://mohdasif.com/blog"><i class="fa-solid fa-feather feather-thin-style" style="font-size: 18px;"></i></a>
-        <a href="https://mohdasif.com/photos"><i class="fa-solid fa-camera camera-thin-style" style="font-size: 18px;"></i></a>
-        <a href="https://mohdasif.com/play"><i class="fa-solid fa-play play-thin-style" style="font-size: 18px;"></i></a>
-        <a href="https://mohdasif.com/contact"><i class="fa-solid fa-comment-dots comment-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/"><i class="fa-solid fa-house house-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/blog"><i class="fa-solid fa-feather feather-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/photos"><i class="fa-solid fa-camera camera-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/play"><i class="fa-solid fa-play play-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/contact"><i class="fa-solid fa-comment-dots comment-thin-style" style="font-size: 18px;"></i></a>
     </div>
-  
     
-<!-- Bottom Navigation -->
-<div class="bottom-nav">
-  <div class="menu-wrapper">
-    
-    <!-- Mobile version (⋮) -->
-    <button class="menu-button mobile-only" onclick="toggleMenu()">||</button>
-
-    <!-- Desktop version (⋯) -->
-    <button class="menu-button desktop-only" onclick="toggleMenu()">⋯</button>
-
-    <div class="dropdown" id="menu">
-        <!-- New Links First -->
-        <a href="https://www.amazon.in/shop/mohdasif">Amazon</a>
-    </div>
-
-  </div>
-</div>
-
 
 <div class="menu-toggle"><i class="fa-solid fa-bars bars-light-style"></i></div>
 <nav>
     <ul>
     <li><h4 style="margin-bottom: 50px;"></h4></li>
-    <li><a href="https://mohdasif.com/books">Books</a></li>
-    <li><a href="https://mohdasif.com/fitness">Fitness</a></li>
-    <li><a href="https://mohdasif.com/islam">Islam</a></li>
-    <li><a href="https://mohdasif.com/poetry">Poetry</a></li>
+    <li><a href="/books">Books</a></li>
+    <li><a href="/fitness">Fitness</a></li>
+    <li><a href="/islam">Islam</a></li>
+    <li><a href="/poetry">Poetry</a></li>
     </ul>
 </nav>
 
@@ -1009,182 +830,164 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-<section>
-<h2 style="margin-top: 40px;">Supplements</h2>
+    <div class="container">
+      <div class="categories">
 
-<div class="blog-cards">
-
-    <!-- Blog Post 3 -->
-    <div class="blog-card">
-        <a href="https://amzn.to/3KqzQmS">
-            <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/creatine.webp">
-            <div class="blog-card-content">
-                <h3><a href="https://amzn.to/3KqzQmS">Micronized Creatine Powder</a></h3>
-            </div>
-        </a>
+      </div>
     </div>
 
-    <!-- Blog Post 1 -->
-    <div class="blog-card">
-        <a href="https://amzn.to/3ZccsC0">
-            <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/coffee.webp">
-            <div class="blog-card-content">
-                <h3><a href="https://amzn.to/3ZccsC0">Coffee Powder Jar</a></h3>
-            </div>
-        </a>
-    </div>
-
-    <!-- Blog Post 2 -->
-    <div class="blog-card">
-        <a href="https://amzn.to/4bFrsvI">
-            <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/protien.jpg">
-            <div class="blog-card-content">
-                <h3><a href="https://amzn.to/4bFrsvI">Whey Protein Powder</a></h3>
-            </div>
-        </a>
-    </div>
-
-</div>
-</section>
-
-<section>
-    <h2>Accessories</h2>
-
-    <div class="blog-cards">
-
-        <!-- Blog Post 5 -->
+    <section>
+      <div class="blog-cards">
         <div class="blog-card">
-            <a href="https://amzn.to/4ee6uEU">
-        <img src="https://pub-adae714c33e94a3fb689e46580cae296.r2.dev/figure8.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/4ee6uEU">Figure 8 Lifting Straps</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/QtjLwA9Ydxc"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
-
-        <!-- Blog Post 4 -->
         <div class="blog-card">
-            <a href="https://amzn.to/3Zfb0Pb">
-        <img src="https://pub-adae714c33e94a3fb689e46580cae296.r2.dev/strap.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/3Zfb0Pb">Weight Lifting Straps</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/YZp74ls2NT0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
-
-
-        <!-- Blog Post 3 -->
         <div class="blog-card">
-            <a href="https://amzn.to/4eckor9">
-                <img src="https://pub-adae714c33e94a3fb689e46580cae296.r2.dev/towel.jpg">
-                <div class="blog-card-content">
-                    <h3><a href="https://amzn.to/4eckor9">Workout Towels</a></h3>
-                </div>
-            </a>
+          <iframe
+            src="https://www.youtube.com/embed/qrbHlqHYkv0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-
-
-        <!-- Blog Post 2 -->
         <div class="blog-card">
-            <a href="https://amzn.to/3Vk2E6G">
-                <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/bag.jpg">
-                <div class="blog-card-content">
-                    <h3><a href="https://amzn.to/3Vk2E6G">Gym Bag</a></h3>
-                </div>
-            </a>
+          <iframe
+            src="https://www.youtube.com/embed/X0nXMTsxhWg"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-
-
-        <!-- Blog Post 1 -->
         <div class="blog-card">
-            <a href="https://amzn.to/4bXr0sm">
-        <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/belt.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/4bXr0sm">Leather Weight Lifting Belt</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/XcUe3vTYq78"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
-
-
-    </div>
-</section>
-
-<section>
-    <h2>Food</h2>
-
-    <div class="blog-cards">
-
-        <!-- Blog Post 6 -->
         <div class="blog-card">
-            <a href="https://amzn.to/453I7q2">
-        <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/peanuts.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/453I7q2">Roasted Peanuts</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/QfabxJkNRHg"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
-
-
-        <!-- Blog Post 5 -->
         <div class="blog-card">
-            <a href="https://amzn.to/4c0k39V">
-        <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/quinoa.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/4c0k39V">Quinoa</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/4nOrTcsf7ow"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
-
-        <!-- Blog Post 4 -->
         <div class="blog-card">
-            <a href="https://amzn.to/4bFYKea">
-        <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/skimmed.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/4bFYKea">Skimmed Milk Powder</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/mB8-GJIAWuU"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
-
-
-        <!-- Blog Post 3 -->
         <div class="blog-card">
-            <a href="https://amzn.to/4bVxmcl">
-        <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/walnuts.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/4bVxmcl">Walnuts</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/L2rKhYp9XV4"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
-
-        <!-- Blog Post 2 -->
         <div class="blog-card">
-            <a href="https://amzn.to/3Vmm3Uv">
-        <img src="https://pub-5c32c03e0b524d36aa95c66697e505eb.r2.dev/rolled%20oats.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/3Vmm3Uv">Rolled Oats</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/O1KQawtyeiw"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
-
-        <!-- Blog Post 1 -->
         <div class="blog-card">
-            <a href="https://amzn.to/3KpcbmF">
-        <img src="https://pub-adae714c33e94a3fb689e46580cae296.r2.dev/almonds.jpg">
-        <div class="blog-card-content">
-            <h3><a href="https://amzn.to/3KpcbmF">Almonds</a></h3>
+          <iframe
+            src="https://www.youtube.com/embed/N6myDseM28Y"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </a>
-</div>
+        <div class="blog-card">
+          <iframe
+            src="https://www.youtube.com/embed/Fs3O6iGj77Q"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="blog-card">
+          <iframe
+            src="https://www.youtube.com/embed/T5LdaKa6TIo"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="blog-card">
+          <iframe
+            src="https://www.youtube.com/embed/ehv34LUn3sg"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="blog-card">
+          <iframe
+            src="https://www.youtube.com/embed/r3XAKip-cZc"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="blog-card">
+          <iframe
+            src="https://www.youtube.com/embed/ZcpijYmUNM0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="blog-card">
+          <iframe
+            src="https://www.youtube.com/embed/YSU8njtRia4"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="blog-card">
+          <iframe
+            src="https://www.youtube.com/embed/C79dWo7z9vw"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector("nav").classList.toggle("menu-open");
+        });
 
-</section>
+      function openNav() {
+        document.querySelector(".sidebar").style.width = "250px";
+      }
 
-   <!-- Other existing content -->
+      function closeNav() {
+        document.querySelector(".sidebar").style.width = "0";
+      }
+    </script>
+    <!-- Other existing content -->
 
     <!-- Move to Top Button -->
     <div id="moveToTop" class="move-to-top">
-        <i class="fa-solid fa-chevron-up" style="color: #808080;"></i>
-    </div>
+      <i class="fa-solid fa-chevron-up" style="color: #808080;"></i>
+  </div>
 
     <style>
         /* Move to Top Button */
@@ -1283,30 +1086,8 @@ moveToTopButton.addEventListener('click', () => {
 handleScroll();
     </script>
 
-    <!-- Footer Section -->
-
-        <div class="privacy-policy">
-        <a href="/privacy" style="font-weight: normal;">Privacy</a> |
-        <a href="/terms" style="font-weight: normal;">Terms</a>
-            <p>This page is affiliated with Amazon</p>
-        </div>
-    </footer>
-
-<script>
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('nav').classList.toggle('menu-open');
-    });
-
-    function openNav() {
-        document.querySelector(".sidebar").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.querySelector(".sidebar").style.width = "0";
-    }
-</script>
-
-<script>
+    
+ <script>
   function toggleMenu() {
     const menu = document.getElementById('menu');
     menu.classList.toggle('show');
@@ -1346,8 +1127,17 @@ handleScroll();
   document.addEventListener("DOMContentLoaded", () => {
     updateMenuVisibility();
   });
-</script>
+</script>   
+
+    <!-- Footer Section -->
+    <div class="privacy-policy">
+        <p>Content on this page embedded from YouTube</p>
+    </div>
+</div>
+
+</footer>
+</div> <!-- Close the page-container div here. -->
+
 
 </body>
-
 </html>

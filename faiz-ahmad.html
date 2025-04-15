@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faiz Ahmad | Asif</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="https://imgur.com/yMpZ3pQ.png">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            font-family: 'Teimpos', 'Roboto', 'Sentinel', 'Helvetica', sans-serif;
+            overflow-x: hidden;
+        }
+
+        #desktop-navigation,
+        #mobile-navigation {
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Styles for desktop navigation */
+        #desktop-navigation {
+            background-color: #333;
+            color: #fff;
+            padding: 7px 0px; /* Consistent padding */
+            font-size: 18.7px; /* Font size */
+            font-weight: bold;
+            display: block; /* Ensure visibility */
+        }
+
+        /* Styles for mobile navigation */
+        #mobile-navigation {
+            background-color: #fff;
+            color: #000;
+            padding: 10px;
+            display: none; /* Hide by default */
+            font-size: 18px; /* Font size */
+            position: fixed;
+            top: 0;
+            left: 0px;
+            right: 10px;
+            width: 100%;
+        }
+
+        /* Common link styles for both desktop and mobile */
+        #desktop-navigation a,
+        #mobile-navigation a {
+            color: inherit;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block; /* Ensure proper spacing */
+        }
+
+
+        /* Remove margin from the last link */
+        #desktop-navigation a:last-child,
+        #mobile-navigation a:last-child {
+            margin-right: 0;
+        }
+
+
+        @media only screen and (min-width: 601px) {
+            /* Show desktop navigation on larger screens */
+            #desktop-navigation {
+                display: block;
+            }
+            /* Hide mobile navigation on larger screens */
+            #mobile-navigation {
+                display: none;
+            }
+        }
+
+    .container {
+        max-width: 550px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .post {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 35px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+    .post p {
+        margin: 0;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+        @media only screen and (max-width: 600px) {
+            /* Show mobile navigation and hide desktop navigation on small screens */
+            #desktop-navigation {
+                display: none;
+            }
+
+            #mobile-navigation {
+                display: block;
+            }
+        }
+
+        /* New styles for the about.me link container and button */
+        .about-me-container {
+            text-align: center;
+        }
+
+        p {
+            color: #222; /* Darker font color */
+            margin-bottom: 20px;
+        }
+
+        /* Reduce font size for span text */
+        .post span {
+            font-size: 11px;
+        }
+
+        /* Set max-width for images in posts */
+        .post img {
+            max-width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Add border radius */
+        }
+
+    /* Sidebar styles */
+    #sidebar {
+        height: 100%;
+        width: 125px; /* Adjusted width for the sidebar */
+        position: fixed;
+        top: 45px;
+        left: 15px;
+        background-color: #f5f5f5;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 32px;
+    }
+
+    #sidebar a {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #fff;
+        border-radius: 20px;
+        font-size: 16px;
+        color: #333;
+        display: block;
+        transition: 0.3s;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Add a shadow */
+        margin-bottom: 10px; /* Add space between links */
+    }
+
+    #sidebar a:hover {
+        background-color: #03c04a; /* Background color on hover */
+        color: #fff; /* Text color on hover */
+    }
+
+    #sidebar .close-btn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+        @media only screen and (max-width: 600px) {
+            /* Show mobile navigation and hide desktop navigation on small screens */
+            #desktop-navigation {
+                display: none;
+            }
+
+            #mobile-navigation {
+                display: block;
+            }
+
+            .content-container {
+                margin-left: 0; /* Reset margin for small screens */
+            }
+
+            #sidebar {
+                display: none; /* Hide sidebar on small screens */
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* Show mobile navigation and hide desktop navigation on small screens */
+            #desktop-navigation {
+                display: none;
+            }
+
+            #mobile-navigation {
+                display: block;
+            }
+        h1 {
+            color: #333;
+            margin-bottom: 20px; /* Add space between title and content */
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4285f4;
+            font-weight: normal;
+        }
+
+        a:hover {
+            text-decoration: none; /* Remove underline on hover */
+        }
+
+        /* New style for left-aligning specific sections */
+        .left-align {
+            text-align: left;
+        }
+
+        /* Center-align the about.me link */
+        .about-me {
+            text-align: center;
+        }
+
+        /* Center-align Links */
+        .center-section {
+            text-align: center;
+        }
+
+            .content-container {
+                margin-left: 0; /* Reset margin for small screens */
+            }
+
+            #sidebar {
+                display: none; /* Hide sidebar on small screens */
+            }
+        }
+        /* Reduce the size of the scrollbar */
+#sidebar::-webkit-scrollbar {
+    width: 3px; /* Adjust the width as needed */
+}
+
+/* Handle for the scrollbar */
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of the scrollbar handle */
+    border-radius: 2px; /* Rounded corners for the scrollbar handle */
+}
+
+/* Track for the scrollbar */
+#sidebar::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the scrollbar track */
+}
+
+/* Corner of the scrollbar */
+#sidebar::-webkit-scrollbar-corner {
+    background-color: transparent; /* Color of the scrollbar corner */
+}
+    /* Media query to hide the menu toggle on desktop view */
+    @media (min-width: 768px) {
+        .menu-toggle {
+            display: none; /* Hide the menu toggle on larger screens */
+        }
+    }
+
+
+    .categories {
+        text-align: center;
+        margin-bottom: -15px;
+        padding: 10px 20px 10px 10px; /* Adjusted padding */
+        overflow-x: auto; /* Enable horizontal scrolling without displaying the scrollbar */
+        white-space: nowrap; /* Prevent categories from wrapping */
+    }
+
+    /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+        .categories::-webkit-scrollbar {
+        display: none;
+    }
+
+.category-link {
+    background-color: #f5f5f5;
+    color: #000;
+    padding: 3px 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 12px; /* Add margin between buttons for mobile */
+    transform: translateX(7px); /* Move the custom button slightly to the right */
+    font-weight: normal; /* Set font weight to normal */
+    margin-top: 5px; /* Add margin between navigation and buttons */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+    .category-link:hover {
+        background-color: #e0e0e0;
+    }
+
+
+
+/* Hide the categories on desktop screens */
+@media only screen and (min-width: 601px) {
+    .categories {
+        display: none;
+    }
+}
+
+
+/* Active link styles */
+#sidebar a.active {
+  color: #fff; /* Text color for active link */
+  background-color: #04AA6D; /* Background color for active link */
+}
+/* Active link styles */
+.categories a.active {
+  color: #fff; /* Text color for active link */
+  background-color: #007E8F; /* Background color for active link */
+  border-radius: 10px; /* Rounded corners */
+  padding: 2px 6px; /* Increase the size of the background color */
+  margin-right: 15px; /* Move the active button slightly to the right */
+}
+    #sidebar .sidebar-section a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #e0e0e0; /* Light line */
+        transition: background 0.3s;
+    }
+
+    /* Line above the first <a> element */
+    #sidebar .sidebar-section a:first-of-type {
+        border-top: 1px solid #e0e0e0; /* Light line above the first link */
+    }
+
+    /* Remove the line after the last item */
+    #sidebar .sidebar-section a:last-child {
+        border-bottom: none;
+    }
+
+    /* Hover effect */
+    #sidebar .sidebar-section a:hover {
+        background-color: #FAF9F6; /* Optional hover effect */
+    }
+
+    /* Active link styling */
+    #sidebar .sidebar-section a.active {
+        background-color: #04AA6D; /* Background for active item */
+        color: white; /* White text for active link */
+    }
+    #sidebar .spacer {
+    background-color: #F5F5F5;  /* Light gray background */
+    height: 35px;                /* Increased height */
+    margin: 0px 0;              /* Space above and below */
+    display: block;              /* Block-level element */
+    width: 100%;                 /* Full width */
+}
+#sidebar .sidebar-section::after {
+    content: ""; /* Create an empty content block */
+    display: block;
+    height: 150px; /* Adjust height as needed */
+    background-color: #f5f5f5; /* Set background color */
+}
+        .menu-toggle {
+            display: block; /* Show the menu toggle by default */
+            position: fixed;
+            top: 9px;
+            left: 30px;
+            font-size: 21px; /* Increase the font size */
+            cursor: pointer;
+            z-index: 1000; /* Ensure the menu icon is on top */
+        }
+
+        nav {
+            float: left;
+            width: 33%;
+            background-color: #f1f1f1;
+            padding: 32px;
+            height: 100vh;
+            position: fixed;
+            top: 0; /* Position at the top */
+            overflow: auto;
+            transition: transform 0.9s ease;
+            transform: translateX(-100%);
+            z-index: 999; /* Ensure the sidebar is on top */
+        }
+        nav.menu-open {
+            transform: translateX(0);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+    margin-bottom: 3px;
+
+}
+nav ul li:first-child {
+    margin-top: 15px; /* Adjust the margin as needed */
+}
+
+nav ul h4 {
+    margin-bottom: 10px; /* Add space above all h4 elements */
+}
+
+nav ul h4:first-of-type {
+    margin-top: 35px; /* Add additional space above the first h4 */
+margin-bottom: 20px; /* Add additional space above the first h4 */
+}
+
+nav, nav ul, nav li, nav a, nav h4 {
+    font-weight: normal !important; /* Ensure all elements inside nav have normal font weight */
+}
+
+/* Target all links inside the navigation */
+nav li a {
+    padding: 0px 10px;  /* 0px for top & bottom, 10px for left & right */
+    border-radius: 10px;  /* Optional: rounded corners */
+    background-color: white;  /* Set white background */
+    color: grey;  /* Set grey text color */
+    text-decoration: none;  /* Remove underline */
+    font-family: 'Arial', sans-serif;  /* Set font family */
+    font-size: 15px;  /* Set font size */
+    font-weight: normal;  /* Set normal font weight */
+    margin-bottom: 10px; /* Adds space below the buttons */
+    display: inline-block; /* Ensures margin-bottom works */
+    margin-left: -10px;
+}
+/* Specific styling for Videos link */
+nav ul li a[href='https://mohdasif.in/videos'] {
+  background-color: grey; /* White background */
+  color: white;
+  padding: 10px 0; /* Top & Bottom padding */
+  width: 110px;    /* Fixed width for all buttons */
+  height: 35px;    /* Fixed height */
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 15px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  font-size:15px;
+}
+
+
+/* Specific styling for Mushaira link */
+nav ul li a[href='https://mohdasif.in/mushaira'] {
+  background-color: grey; /* White background */
+  color: white;
+  padding: 10px 0; /* Top & Bottom padding */
+  width: 110px;    /* Fixed width for all buttons */
+  height: 35px;    /* Fixed height */
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 15px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  font-size:15px;
+}
+
+nav ul li a[href='https://mohdasif.in/videos'] {
+  background-color: grey !important;
+  color: white !important;
+}
+nav ul li a[href='https://mohdasif.in/mushaira'] {
+  background-color: grey !important;
+  color: white !important;
+}
+
+/**** STYLE FOR ALL NAV LINKS BUT SKIP FIRST TWO ****/
+
+/* Style only the links AFTER "Links" heading */
+nav ul li:nth-child(n+2) a {
+  background-color: #fff; /* White background */
+  color: grey;
+  padding: 5px 0; /* Top & Bottom padding */
+  width: 110px;    /* Fixed width for all buttons */
+  height: 35px;    /* Fixed height */
+  display: inline-block;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: none;
+  line-height: 25px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+/* Optional: Remove bullet points from all <li> */
+nav ul li {
+  list-style-type: none;
+}
+
+    /* Media query to hide the menu toggle on desktop view */
+    @media (min-width: 601px) {
+        .menu-toggle {
+            display: none; /* Hide the menu toggle on larger screens */
+        }
+    }
+    .footer {
+      background-color: #f8f8f8;
+      padding: 40px 0;
+    }
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-section {
+      flex: 1 0 100%;
+      padding-left: 20px; /* Add left padding */
+      box-sizing: border-box; /* Include padding in width calculation */
+      margin-bottom: 20px;
+      text-align: left; /* Align text to the left */
+    }
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: left; /* Align title to the left */
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+    .footer-section ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: normal; /* Change font weight to normal */
+    }
+    .footer-section ul li a:hover {
+      color: #007bff;
+      font-weight: normal; /* Change font weight to normal */
+    }
+    .privacy-policy {
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+        @media (min-width: 768px) {
+            .footer-section {
+                flex: 1; /* Adjust width for desktop to allow sections to grow */
+            }
+
+            .footer-section:first-child {
+                text-align: left; /* Align first section (Pages) to the left */
+            }
+
+            .footer-section:last-child {
+                text-align: right; /* Align last section (Shop) to the right */
+            }
+        }
+     @media (min-width: 768px) { /* Adjust breakpoint as needed */
+  .privacy-policy {
+    display: none;
+  }
+}   
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push footer down */
+    height: 100vh; /* Full height */
+}
+
+.menu {
+    flex-grow: 1; /* Push footer down */
+    padding-bottom: 50px; /* Creates space between menu and footer */
+}
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+    margin-left: -15px; /* Adjust the value as needed */
+}
+
+
+        .footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 5px 0; /* Reduce padding */
+    width: 100%;
+    font-size: 13px; /* Reduce font size */
+    display: flex;
+    justify-content: center;
+    gap: 3px; /* Reduce spacing between links */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Ensure links don't have extra margin */
+.footer a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0; /* Removes unwanted space */
+    display: inline-block;
+    white-space: nowrap; /* Prevents breaking into multiple lines */
+    padding: 0 2px; /* Add small padding to avoid touching */
+}
+    .footer {
+      background-color: #f1f1f1;
+      padding: 50px 0;
+    }
+    #mobile-navigation i {
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Thin-style for all icons: black by default, grey on hover */
+.house-thin-style,
+.feather-thin-style,
+.bag-thin-style,
+.camera-thin-style,
+.play-thin-style,
+.amazon-brand-style,
+.comment-thin-style {
+  color: transparent;
+  -webkit-text-stroke: 0.8px #000; /* black outline by default */
+  font-size: 24px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.amazon-brand-style:hover,
+.house-thin-style:hover,
+.feather-thin-style:hover,
+.camera-thin-style:hover,
+.bag-thin-style:hover,
+.play-thin-style:hover,
+.comment-thin-style:hover {
+  -webkit-text-stroke: 0.8px #6C757D; /* soft grey on hover */
+  opacity: 0.85;
+}
+
+.bars-light-style {
+  color: transparent;
+  -webkit-text-stroke: 0.9px #333;  /* mimic light look */
+  font-size: 24px;
+  transform: scale(0.85);           /* scale down to match visual size */
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.bars-light-style:hover {
+  -webkit-text-stroke: 0.9px #000;
+  opacity: 1;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 20px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 0;
+  z-index: 999;
+  box-shadow: none;
+}
+
+/* Desktop - centered */
+@media (min-width: 601px) {
+  .bottom-nav {
+    left: 15%;
+    transform: translateX(-80%);
+  }
+}
+
+/* Mobile - aligned to right middle */
+@media (max-width: 600px) {
+  .bottom-nav {
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    right: 3px;
+    transform: translateY(-50%);
+  }
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+/* Menu button styled as a circle (desktop) */
+.menu-button {
+  background: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+/* Menu button on mobile - flat look */
+@media (max-width: 600px) {
+  .menu-button {
+    background: transparent;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
+/* Bottom dropdown menu */
+.dropdown {
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: none;
+  z-index: 1000;
+
+  width: auto;
+  max-width: 250px;
+  min-width: 140px;
+  padding: 10px 12px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/* Show the dropdown */
+.dropdown.show {
+  display: block;
+}
+
+/* Dropdown link styles */
+.dropdown a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Desktop position: center under button */
+@media (min-width: 601px) {
+  .dropdown {
+    left: 80%;
+    bottom: 70px;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown {
+    left: auto;
+    right: 40px; /* Adjust as needed to align it to the left of the button */
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Show/hide per device */
+.mobile-only,
+.desktop-only {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 601px) {
+  .desktop-only {
+    display: inline-flex;
+  }
+}
+@media (min-width: 601px) {
+  .dropdown {
+    left: 70%; /* a bit more right than 60% */
+    bottom: 70px;
+    transform: translateX(-25%) translateY(-10px); /* balances the shift */
+  }
+}
+</style>
+
+<!-- Move to Top Button -->
+<div id="moveToTop" class="move-to-top">
+    <i class="fa-solid fa-chevron-up" style="color: #1ABC9C;"></i>
+</div>
+    
+<body>
+<!-- Sidebar -->
+<div id="sidebar">
+    <div class="sidebar-section">
+        <a href="https://mohdasif.com">Home</a>
+        <a href="/islam">Islam</a>
+        <a href="/fitness">Fitness</a>
+        <a href="/books">Books</a>
+        <a href="/" class="active">Poetry</a>
+    </div>
+</div>
+
+
+    <!-- Desktop Navigation -->
+    <div id="desktop-navigation">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">About</a>
+        <a href="/shop">Shop</a>     
+        
+        <a href="https://www.amazon.in/shop/mohdasif" style="position: absolute; right: 220px;"><i class="fa-solid fa-bag-shopping"></i></a> 
+    </div>
+
+    <!-- Mobile Navigation -->  
+    <div id="mobile-navigation">  
+        <a href="/"><i class="fa-solid fa-house house-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/blog"><i class="fa-solid fa-feather feather-thin-style" style="font-size: 18px;"></i></a>
+        <a href="/shop"><i class="fa-solid fa-bag-shopping bag-thin-style" style="font-size: 18px;"></i></a>
+        <a href="https://www.amazon.in/shop/mohdasif"><i class="fa-brands fa-amazon" style="font-size: 18px; color: #666;"></i></a>
+        <a href="/contact"><i class="fa-solid fa-comment-dots comment-thin-style" style="font-size: 18px;"></i></a>
+    </div>
+  
+    
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <div class="menu-wrapper">
+    
+    <!-- Mobile version (⋮) -->
+    <button class="menu-button mobile-only" onclick="toggleMenu()">||</button>
+
+    <!-- Desktop version (⋯) -->
+    <button class="menu-button desktop-only" onclick="toggleMenu()">⋯</button>
+
+    <div class="dropdown" id="menu">
+        <a href="/mirza-ghalib">Mirza Ghalib</a>
+        <a href="/mir-taqi-mir">Mir Taqi Mir</a>
+        <a href="/jaun-elia">Jaun Elia</a>
+        <a href="/faiz-ahmad">Faiz Ahmad</a>
+        <a href="/daagh-dehlvi">Daagh Dehlvi</a>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="menu-toggle"><i class="fa-solid fa-bars bars-light-style"></i></div>
+<nav>
+    <ul>
+    <li><h4 style="margin-bottom: 50px;"></h4></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/shop">Shop</a></li>
+    </ul>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <a href="https://www.amazon.in/shop/mohdasif">[ amazon.in ]</a>
+    </div>
+</nav>
+
+<!-- Place this script at the bottom of the page -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const isAndroid = /android/i.test(navigator.userAgent);
+
+  if (isAndroid) {
+    const intentMap = {
+      'youtube.com': 'intent://www.youtube.com/@mohdasif/shorts#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=https%3A%2F%2Fwww.youtube.com%2F@mohdasif%2Fshorts;end;',
+      'm.youtube.com': 'intent://www.youtube.com/@mohdasif/shorts#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=https%3A%2F%2Fwww.youtube.com%2F@mohdasif%2Fshorts;end;',
+      'pinterest.com': 'intent://user/mohdasif#Intent;scheme=pinterest;package=com.pinterest;S.browser_fallback_url=https%3A%2F%2Fpinterest.com%2Fmohdasif;end;',
+      'tumblr.com': 'intent://mohdasif.tumblr.com#Intent;scheme=https;package=com.tumblr;S.browser_fallback_url=https%3A%2F%2Fwww.tumblr.com%2Fmohdasif;end;',
+      'twitter.com': 'intent://user?screen_name=mohdasif#Intent;scheme=twitter;package=com.twitter.android;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fmohdasif;end;',
+      'x.com': 'intent://user?screen_name=mohdasif#Intent;scheme=twitter;package=com.twitter.android;S.browser_fallback_url=https%3A%2F%2Fx.com%2Fmohdasif;end;',
+    };
+
+    document.querySelectorAll('a[href^="http"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        const url = new URL(link.href);
+        const host = url.hostname.replace('www.', '');
+
+        // Special handling for Telegram
+        if (host === 'telegram.me' || host === 't.me') {
+          e.preventDefault();
+
+          // First try tg://
+          window.location.href = 'tg://resolve?domain=mohdasif';
+
+          // Fallback to intent:// after 1s if tg:// fails
+          setTimeout(function () {
+            window.location.href =
+              'intent://resolve?domain=mohdasif#Intent;scheme=tg;package=org.telegram.messenger;S.browser_fallback_url=https%3A%2F%2Ftelegram.me%2Fmohdasif;end;';
+          }, 1000);
+        } else if (intentMap[host]) {
+          e.preventDefault();
+          window.location.href = intentMap[host];
+        }
+      });
+    });
+  }
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const amazonLink = document.getElementById('amazonLink');
+
+  amazonLink.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const androidIntentLink = 'intent://www.amazon.in/shop/mohdasif#Intent;scheme=https;package=in.amazon.mShop.android.shopping;end;';
+    const fallbackUrl = 'https://www.amazon.in/shop/mohdasif';
+
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      window.location.href = androidIntentLink;
+      setTimeout(() => {
+        window.location.href = fallbackUrl; // Fallback in case the intent fails
+      }, 1500);
+    } else {
+      window.location.href = fallbackUrl; // iOS and Desktop
+    }
+  });
+});
+</script>
+
+<!-- Page Container -->
+<div class="page-container">
+
+<div class="container" id="container" style="margin-top: 20px">
+    <!-- Your content here -->
+    <div class="categories">      
+    </div>
+</div>
+
+<div class="container">
+    <div class="post">
+        <p>दिल ना-उमीद तो नहीं नाकाम ही तो है</p>
+        <p>लम्बी है ग़म की शाम मगर शाम ही तो है</p>
+    </div>
+    <div class="post">
+        <p>और भी दुख हैं ज़माने में मोहब्बत के सिवा</p>
+        <p>राहतें और भी हैं वस्ल की राहत के सिवा</p>
+    </div>
+    <div class="post">
+        <p>कर रहा था ग़म-ए-जहाँ का हिसाब</p>
+        <p>आज तुम याद बे-हिसाब आए</p>
+    </div>
+    <div class="post">
+        <p>और क्या देखने को बाक़ी है</p>
+        <p>आप से दिल लगा के देख लिया</p>
+    </div>
+    <div class="post">
+        <p>दोनों जहान तेरी मोहब्बत में हार के</p>
+        <p>वो जा रहा है कोई शब-ए-ग़म गुज़ार के</p>
+    </div>
+    <div class="post">
+        <p>तुम्हारी याद के जब ज़ख़्म भरने लगते हैं</p>
+        <p>किसी बहाने तुम्हें याद करने लगते हैं</p>
+    </div>
+    <div class="post">
+        <p>इक तर्ज़-ए-तग़ाफ़ुल है सो वो उन को मुबारक</p>
+        <p>इक अर्ज़-ए-तमन्ना है सो हम करते रहेंगे</p>
+    </div>
+    <div class="post">
+        <p>आए तो यूँ कि जैसे हमेशा थे मेहरबान</p>
+        <p>भूले तो यूँ कि गोया कभी आश्ना न थे</p>
+    </div>
+    <div class="post">
+        <p>वो आ रहे हैं वो आते हैं आ रहे होंगे</p>
+        <p>शब-ए-फ़िराक़ ये कह कर गुज़ार दी हम ने</p>
+    </div>
+    <div class="post">
+        <p>न जाने किस लिए उम्मीद-वार बैठा हूँ</p>
+        <p>इक ऐसी राह पे जो तेरी रहगुज़र भी नहीं</p>
+    </div>
+    <div class="post">
+        <p>मक़ाम 'फ़ैज़' कोई राह में जचा ही नहीं</p>
+        <p>जो कू-ए-यार से निकले तो सू-ए-दार चले</p>
+    </div>
+    <div class="post">
+        <p>जानता है कि वो न आएँगे</p>
+        <p>फिर भी मसरूफ़-ए-इंतिज़ार है दिल</p>
+    </div>
+    <div class="post">
+        <p>गर बाज़ी इश्क़ की बाज़ी है जो चाहो लगा दो डर कैसा</p>
+        <p>गर जीत गए तो क्या कहना हारे भी तो बाज़ी मात नहीं</p>
+    </div>
+    <div class="post">
+        <p>उठ कर तो आ गए हैं तिरी बज़्म से मगर</p>
+        <p>कुछ दिल ही जानता है कि किस दिल से आए हैं</p>
+    </div>
+    <div class="post">
+        <p>इक फ़ुर्सत-ए-गुनाह मिली वो भी चार दिन</p>
+        <p>देखे हैं हम ने हौसले परवरदिगार के</p>
+    </div>
+    <div class="post">
+        <p>ये दाग़ दाग़ उजाला ये शब-गज़ीदा सहर</p>
+        <p>वो इंतिज़ार था जिस का ये वो सहर तो नहीं</p>
+    </div>
+    <div class="post">
+        <p>आए कुछ अब्र कुछ शराब आए</p>
+        <p>इस के ब'अद आए जो अज़ाब आए</p>
+    </div>
+    <div class="post">
+        <p>न गुल खिले हैं न उन से मिले न मय पी है</p>
+        <p>अजीब रंग में अब के बहार गुज़री है</p>
+    </div>
+    <div class="post">
+        <p>बे-दम हुए बीमार दवा क्यूँ नहीं देते</p>
+        <p>तुम अच्छे मसीहा हो शिफ़ा क्यूँ नहीं देते</p>
+    </div>
+    <div class="post">
+        <p>दिल से तो हर मोआमला कर के चले थे साफ़ हम</p>
+        <p>कहने में उन के सामने बात बदल बदल गई</p>
+    </div>
+    <div class="post">
+        <p>अब अपना इख़्तियार है चाहे जहाँ चलें</p>
+        <p>रहबर से अपनी राह जुदा कर चुके हैं हम</p>
+    </div>
+    <div class="post">
+        <p>मिन्नत-ए-चारा-साज़ कौन करे</p>
+        <p>दर्द जब जाँ-नवाज़ हो जाए</p>
+    </div>
+    <div class="post">
+        <p>हम सहल-तलब कौन से फ़रहाद थे लेकिन</p>
+        <p>अब शहर में तेरे कोई हम सा भी कहाँ है</p>
+    </div>
+    <div class="post">
+        <p>इन में लहू जला हो हमारा कि जान ओ दिल</p>
+        <p>महफ़िल में कुछ चराग़ फ़रोज़ाँ हुए तो हैं</p>
+    </div>
+    <div class="post">
+        <p>मता-ए-लौह-ओ-क़लम छिन गई तो क्या ग़म है</p>
+        <p>कि ख़ून-ए-दिल में डुबो ली हैं उँगलियाँ मैं ने</p>
+    </div>
+    <div class="post">
+        <p>हर चारागर को चारागरी से गुरेज़ था</p>
+        <p>वर्ना हमें जो दुख थे बहुत ला-दवा न थे</p>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('menu-open');
+    });
+
+    function openNav() {
+        document.querySelector(".sidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.querySelector(".sidebar").style.width = "0";
+    }
+</script>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+
+  const menuWrapper = document.querySelector('.menu-wrapper');
+  const desktopQuery = window.matchMedia('(min-width: 601px)');
+
+  function closeMenuIfClickedOutside(e) {
+    if (!menuWrapper.contains(e.target)) {
+      document.getElementById('menu').classList.remove('show');
+    }
+  }
+
+  window.addEventListener('click', closeMenuIfClickedOutside);
+  window.addEventListener('touchstart', closeMenuIfClickedOutside); // 👈 this fixes mobile
+
+  function updateMenuVisibility() {
+    const scrollTop = window.scrollY;
+    const scrollBottom = window.innerHeight + scrollTop >= document.body.scrollHeight;
+
+    if (desktopQuery.matches) {
+      menuWrapper.style.display = 'inline-flex';
+    } else {
+      if (scrollTop === 0 || scrollBottom) {
+        menuWrapper.style.display = 'inline-flex';
+      } else {
+        menuWrapper.style.display = 'none';
+        document.getElementById('menu').classList.remove('show');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateMenuVisibility);
+  window.addEventListener('resize', updateMenuVisibility);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    updateMenuVisibility();
+  });
+</script>
+
+    <!-- Other existing content -->
+
+    <style>
+        /* Move to Top Button */
+        .move-to-top {
+            position: fixed;
+            bottom: 10px; /* Distance from the bottom */
+            left: 50%; /* Move it to the horizontal center */
+            margin-bottom: 10px;
+            transform: translateX(-50%); /* Offset it by half its width to truly center */
+            font-size: 17px; /* Icon size */
+            color: #333333; /* Black arrow color */
+            background-color: #ffffff; /* Slightly off-white background */
+            border-radius: 50%; /* Circle shape */
+            width: 35px; /* Circle size */
+            height: 35px; /* Circle size */
+            display: flex; /* Flexbox for centering the icon */
+            justify-content: center; /* Center horizontally inside the button */
+            align-items: center; /* Center vertically inside the button */
+            cursor: pointer; /* Pointer on hover */
+            z-index: 1000; /* Ensure it's above other elements */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s, color 0.3s, transform 0.3s; /* Smooth effects */
+        }
+
+
+    /* Show button when visible */
+    .move-to-top.visible {
+        opacity: 1; /* Fully visible */
+    }
+
+/* Adjust for desktop */
+@media (min-width: 601px) {
+    .move-to-top {
+        left: auto;
+        right: 100px; /* Slightly more to the left than 20px */
+        bottom: 15px; /* Slightly lower */
+        transform: none;
+    }
+}
+    </style>
+
+    <script>
+// Move to Top Button functionality
+const moveToTopButton = document.getElementById('moveToTop');
+let lastScrollY = window.scrollY;
+
+function handleScroll() {
+    const currentScrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    if (window.innerWidth >= 768) {
+        // Desktop: Show after scrolling 100px
+        if (currentScrollY > 100) {
+            moveToTopButton.classList.add('visible');
+        } else {
+            moveToTopButton.classList.remove('visible');
+        }
+    } else {
+        // Mobile: Show when scrolling up past 300px OR near bottom 80%
+        if (
+            (currentScrollY < lastScrollY && currentScrollY > 300) ||
+            (currentScrollY + windowHeight > documentHeight * 0.8)
+        ) {
+            moveToTopButton.classList.add('visible');
+        } else {
+            moveToTopButton.classList.remove('visible');
+        }
+    }
+
+    // Apply special behavior only for mobile (≤600px)
+    if (window.innerWidth <= 600) {
+        if (currentScrollY + windowHeight >= documentHeight - 10) {
+            moveToTopButton.style.bottom = "20px"; // Move up when at page end
+        } else {
+            moveToTopButton.style.bottom = "20px"; // Default position on mobile
+        }
+    } else {
+        // Default position for desktops (no extra shift)
+        moveToTopButton.style.bottom = "20px";
+    }
+
+    lastScrollY = currentScrollY;
+}
+
+window.addEventListener('scroll', handleScroll);
+
+moveToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+});
+
+// Initial state check on load
+handleScroll();
+    </script>
+
+</div> <!-- Close the page-container div here. -->
+
+<br>
+</body>
+</html>
