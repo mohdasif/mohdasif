@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Asif</title>
+    <title>Contact | Asif</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="https://imgur.com/yMpZ3pQ.png">
 
     <!-- Add this style block to hide navigation links -->
     <style>
         body {
-            background-color: #f5f5f5;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
             font-family: 'Teimpos', 'Roboto', 'Sentinel', 'Helvetica', sans-serif;
@@ -85,17 +85,18 @@
             margin: 0px auto;
             background-color: #ffffff;
             border-radius: 8px;
-            padding: 20px;
+            padding: 0px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         
                .content-container {
             max-width: 500px;
-            margin: 20px auto;
+            margin: 15px auto;
             background-color: #FEFDFB;
             border-radius: 8px;
-            padding: 20px;
+            padding: 0px;
+            margin-bottom: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
@@ -496,44 +497,6 @@ nav ul h4:first-of-type {
 margin-bottom: 20px; /* Add additional space above the first h4 */
 }
 
-        @media only screen and (max-width: 600px) {
-            /* Show mobile navigation and hide desktop navigation on small screens */
-            #desktop-navigation {
-                display: none;
-            }
-
-            #mobile-navigation {
-                display: block;
-            }
-
-            .content-container {
-                margin-left: 0; /* Reset margin for small screens */
-            }
-
-            #sidebar {
-                display: none; /* Hide sidebar on small screens */
-            }
-        }
-        /* Reduce the size of the scrollbar */
-#sidebar::-webkit-scrollbar {
-    width: 3px; /* Adjust the width as needed */
-}
-
-/* Handle for the scrollbar */
-#sidebar::-webkit-scrollbar-thumb {
-    background-color: #ccc; /* Color of the scrollbar handle */
-    border-radius: 2px; /* Rounded corners for the scrollbar handle */
-}
-
-/* Track for the scrollbar */
-#sidebar::-webkit-scrollbar-track {
-    background-color: transparent; /* Color of the scrollbar track */
-}
-
-/* Corner of the scrollbar */
-#sidebar::-webkit-scrollbar-corner {
-    background-color: transparent; /* Color of the scrollbar corner */
-}
     /* Media query to hide the menu toggle on desktop view */
     @media (min-width: 768px) {
         .menu-toggle {
@@ -929,6 +892,17 @@ nav ul li {
 </div>
     
 <body>
+<!-- Sidebar -->
+<div id="sidebar">
+    <div class="sidebar-section">
+        <a href="/about" class="active">About</a>      
+        <a href="/books">Books</a>
+        <a href="/fitness">Fitness</a>
+        <a href="/islam">Islam</a>
+        <a href="/poetry">Poetry</a>
+    </div>
+</div>
+
     <!-- Desktop Navigation -->
     <div id="desktop-navigation">
         <a href="/">Home</a>
@@ -960,11 +934,9 @@ nav ul li {
     <button class="menu-button desktop-only" onclick="toggleMenu()">⋯</button>
 
     <div class="dropdown" id="menu">
-        <a href="/mirza-ghalib">Mirza Ghalib</a>
-        <a href="/mir-taqi-mir">Mir Taqi Mir</a>
-        <a href="/jaun-elia">Jaun Elia</a>
-        <a href="/faiz-ahmad">Faiz Ahmad</a>
-        <a href="/daagh-dehlvi">Daagh Dehlvi</a>
+        <a href="https://www.pinterest.com/mohdasif">Pinterest</a>
+        <a href="https://goodreads.com/mohdasif">Goodreads</a>
+        <a href="https://quora.com/mohdasif">Quora</a>
     </div>
 
   </div>
@@ -981,6 +953,7 @@ nav ul li {
     <li><a href="/">Poetry</a></li>
     </ul>
 </nav>
+
 
 <!-- Place this script at the bottom of the page -->
 <script>
@@ -1030,15 +1003,6 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
 </div>
 
-<!-- Page Container -->
-
-
-    <!-- Your content goes here -->
-
-<!-- Page Container -->
-
-<!-- Content Container for Links Section -->
-
 <!-- Add the JavaScript script here -->
 <script>
   // Check if the user is on a mobile device
@@ -1055,33 +1019,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 </script>
 
-<div class="content-container" style="background-color: #fff; padding: 15px; border-radius: 10px;">
-    <div class="links-container" style="text-align: left;">
-        <h1 style="text-align: left;">About</h1>
-        <p class="profile-text">
-            Passionate about reading books, poetry, fitness and embracing minimalist living.
-        </p>
-    </div>
-</div>
 
-<div class="content-container" style="background-color: #fff; padding: 15px; border-radius: 10px;">
-    <div class="links-container" style="text-align: left;">
-        <h2 style="text-align: left;">Buy Me a Coffee</h2>
-        <p class="profile-text">
-            Like my work? You can support it here.
-        </p>
-        <p><a href="https://buymeacoffee.com/mohdasif" target="_blank">buymeacoffee.com/mohdasif</a></p>
-    </div>
-</div>
-<div class="content-container" style="background-color: #fff; padding: 15px; border-radius: 10px;">
-    <div class="links-container" style="text-align: left;">
-        <h2 style="text-align: left;">Contact</h2>
-        <p class="profile-text">
-            Feel free to reach out for inquiries or collaborations.
-        </p>
-        <p>Email: <a href="mailto:mail@mohdasif.com">mail@mohdasif.com</a></p>
-    </div>
-</div>
+
 
 
 <style>
@@ -1102,6 +1041,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 </style>
 
+
+<!-- Content Container for Bookshelves Section -->
+<div class="content-container" style="background-color: #FFFFFF;">
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px; text-align: center;">
+            <a href="https://telegram.me/mohdasif" class="blank-button" style="display: inline-block; padding: 6px 13px; border: 1px solid #999; border-radius: 15px; cursor: pointer; max-width: 180px; margin: auto; text-decoration: none; color: grey;">
+                Telegram
+            </a>
+        </li>
+        <li style="margin-bottom: 10px; text-align: center;">
+            <a href="https://clubhouse.com/@mohdasif" class="blank-button" style="display: inline-block; padding: 6px 10px; border: 1px solid #999; border-radius: 15px; cursor: pointer; max-width: 180px; margin: auto; text-decoration: none; color: grey;">
+                Clubhouse
+            </a>
+        </li>
+        <li style="margin-bottom: 10px; text-align: center;">
+            <a href="https://linkedin.com/in/mohdasif" class="blank-button" style="display: inline-block; padding: 6px 16px; border: 1px solid #999; border-radius: 15px; cursor: pointer; max-width: 180px; margin: auto; text-decoration: none; color: grey;">
+                Linkedin
+            </a>
+        </li>
+        <li style="text-align: center;">
+            <a href="https://x.com/mohdasif" class="blank-button" style="display: inline-block; padding: 5px 13px; border: 1px solid #999; border-radius: 15px; cursor: pointer; max-width: 150px; margin: auto; text-decoration: none; color: grey;">
+                X
+            </a>
+        </li>       
+    </ul>
+</div>
+
 <style>
 @media (max-width: 768px) { 
     .mobile-break::after { 
@@ -1110,17 +1076,36 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 }
 </style>
-</div>  
- 
-    <!-- Footer Section -->
+<div class="content-container" style="background-color: #fff; padding: 15px; border-radius: 10px;">
+    <div class="links-container" style="text-align: left;">
+        <h2 style="text-align: left;">Contact</h2>
+        <p class="profile-text">
+            Feel free to reach out for inquiries or collaborations.
+        </p>
+        <p>Email: <a href="mailto:mail@mohdasif.com">mail@mohdasif.com</a></p>
+    </div>
+</div>
+
+<div class="content-container" style="background-color: #fff; padding: 15px; border-radius: 10px;">
+    <div class="links-container" style="text-align: left;">
+        <h3 style="text-align: left;">Ask Me Anything</h3>
+        <p class="profile-text">
+            Share your thoughts anonymously.
+        </p>
+        <p><a href="https://www.confessout.com/mohdasif" target="_blank">confessout.com/mohdasif</a></p>
+    </div>
+</div>
+</div>
+
+<!-- Footer Section -->
     <div class="privacy-policy">
+        <a href="/about" style="font-weight: normal;">About</a> |
         <a href="/privacy" style="font-weight: normal;">Privacy</a> |
         <a href="/terms" style="font-weight: normal;">Terms</a>
     </div>
 </div>
 
 </footer>
-</div> <!-- Close the page-container div here. -->
 
 <script>
     document.querySelector('.menu-toggle').addEventListener('click', function() {
